@@ -65,6 +65,9 @@ TEMPLATES = [
                 'django.contrib.messages.context_processors.messages',
                 'courses.context_processors.get_categories',
             ],
+            'libraries': {
+                'courses_tags': 'courses.templatetags.courses_tags',
+            }
         },
     },
 ]
