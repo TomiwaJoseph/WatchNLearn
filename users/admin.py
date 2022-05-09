@@ -1,6 +1,6 @@
 from django.contrib import admin
 from django.contrib.auth.admin import UserAdmin as BaseUserAdmin
-from .models import CustomUser, Instructor, Profile
+from .models import CustomUser, Instructor, Profile, BookmarkList
 
 
 @admin.register(CustomUser)
@@ -35,6 +35,7 @@ class InstructorAdmin(admin.ModelAdmin):
         return obj
 
 admin.site.register(Profile)
+admin.site.register(BookmarkList)
 
 
 

@@ -13,8 +13,30 @@ from django.views.decorators.csrf import csrf_exempt
 import stripe
 from django.core.mail import send_mail
 from django.contrib.auth.mixins import LoginRequiredMixin
-from users.models import Profile, CustomUser
+from users.models import Profile, CustomUser, BookmarkList
 
+#ajax request starts
+
+def bookmark_it(request):
+    course_id =  int(request.GET.get('course_id'))
+    course_to_add_to_bookmarks = Course.objects.get(id=course_id)
+    try:
+        check_bookmarklist_exist = BookmarkList.objects.filter(user=request.user).first()
+        if check_bookmarklist_exist:
+            check_course_exist = course_id in [i.id for i in check_bookmarklist_exist.folder.all()]
+            if not check_course_exist:
+                check_bookmarklist_exist.folder.add(course_to_add_to_bookmarks)
+        else:
+            create_new_bookmarkslist = BookmarkList.objects.create(user=request.user)
+            create_new_bookmarkslist
+            create_new_bookmarkslist.folder.add(course_to_add_to_bookmarks)
+        return JsonResponse({'status': 'success'})
+    except TypeError:
+        return JsonResponse({'status': 'fail'})
+        
+        
+
+#ajax request ends
 
 stripe.api_key = settings.STRIPE_SECRET_KEY
 
@@ -122,7 +144,7 @@ class CreateCheckoutSessionView(View):
     def post(self, request, *args, **kwargs):
         course_to_buy = int(request.session['course_to_buy'])
         course = Course.objects.get(id=course_to_buy)
-        domain_url = "http://127.0.0.1:8000"
+        domain_url = f'{self.request.scheme}://{self.request.get_host()}'
         checkout_session = stripe.checkout.Session.create(
             payment_method_types=['card'],
             line_items=[

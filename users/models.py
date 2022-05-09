@@ -10,6 +10,7 @@ from PIL import Image
 from io import BytesIO
 from django.core.files.uploadedfile import InMemoryUploadedFile
 import sys
+from courses.models import Course
 
 
 class UserManager(BaseUserManager):
@@ -96,4 +97,13 @@ class Profile(models.Model):
     
     def __str__(self):
         return self.user.first_name + " " + self.user.last_name + " 's Profile"
+    
+
+class BookmarkList(models.Model):
+    user =  models.OneToOneField(settings.AUTH_USER_MODEL, on_delete=models.CASCADE, 
+        related_name="user_bookmarks", null=True)
+    folder = models.ManyToManyField(Course, blank=True)
+
+    def __str__(self):
+        return "{}'s bookmarks".format(self.user)
     

@@ -1,5 +1,11 @@
 $(document).ready(function () {
 
+    $(document).click(function(e) {
+        if(!$(e.target).closest('#show-menu').length) {
+            $('#show-menu').removeClass('show');
+        }
+    })
+
     $('video').bind('contextmenu', function () {
         return false
     });

@@ -3,6 +3,9 @@ from . import views
 
 
 urlpatterns = [
+    # things ajax request
+    path('bookmark-it/', views.bookmark_it, name='bookmark_it'),
+    
     path('courses/', views.CourseListView.as_view(), name='courses'),
     path('courses/free/', views.free_course, name='free_courses'),
     path('course/<slug:slug>', views.CourseDetailView.as_view(), name='course_detail'),

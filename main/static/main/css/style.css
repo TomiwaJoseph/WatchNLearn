@@ -26,8 +26,12 @@ a:hover {
     text-align: center;
 }
 #success_tic h2 {
+    font-family: 'red rose';
     color: #533681;
     margin-bottom: 10px;
+}
+#success_tic p {
+    color: #533681;
 }
 #success_tic h1 {
     text-align: center;
@@ -194,6 +198,15 @@ a:hover {
 .navbar-dark {
     background-color: #533681 !important;
 }
+.navbar-dark .fa-bars{
+    color: #fff !important;
+}
+.navbar-toggler {
+    border: none !important;
+}
+.navbar-toggler:focus{
+    outline: none !important;
+}
 nav.navbar a,
 nav.navbar ul li a {
     color: #fff !important;
@@ -337,7 +350,7 @@ nav.navbar form {
     margin-top: 10px;
 }
 .landing_image a{
-    width: 40%;
+    width: 80%;
     background: #533681;
     padding: 10px 0;
     border: 1px solid #533681;
@@ -360,6 +373,9 @@ nav.navbar form {
 .little_course_info{
     font-size: 14px;
     color: #555555;
+}
+.fa-bookmark.active {
+    color: #ff5733;
 }
 .courses_card i.fa:hover{
     color: #ff5733;
@@ -545,20 +561,15 @@ button:focus{
     background: #ff5733;
     color: #fff!important;
     font-family: 'montserrat';
-    font-size: 15px;
+    font-size: 20px;
 }
 .stripe_pay_tag{
-    display: inline-block;
     background: #533681;
-    padding: 6px 10px;
-    line-height: 1.5;
     font-size: 20px;
     border-radius: 4px;
-    text-transform: uppercase;
     color: #fff !important;
     margin-right: 10px;
     letter-spacing: .2em;
-    text-decoration: none;
 }
 
 
@@ -575,29 +586,37 @@ video{
 }
 
 /* Instructor Landing Page */
-.img_container{
+/* .img_container{
     position: relative;
     text-align: center;
-}
+}*/
+.img_container p{
+    font-size: 32px;
+} 
 .img_container h1{
     font-size: 60px;
 }
-.img_container p{
-    font-size: 32px;
-}
 .instruct_img{
+    display: block;
     filter: brightness(30%);
+    width: 100%;
+}
+.thumbnail {
+    position: relative;
+    display: inline-block;
+}
+.caption {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    color: #fff;
     width: 90%;
 }
-.text-block{
-    position: absolute;
-    margin: 0 auto;
-    left: 0;
-    right: 0;
-    top: 40%;
-    width: 70%;
-    color: white;
-}
+
+
+
 .instruct_headers{
     font-weight: 600;
     font-size: 24px;
@@ -692,24 +711,6 @@ video{
 .login_error {
     font-size: 14px;
 }
-/* 
-.category {
-    display: inline-block;
-    background: #533681;
-    padding: 2px 8px;
-    line-height: 1.5;
-    font-size: 12px;
-    border-radius: 4px;
-    text-transform: uppercase;
-    color: #fff !important;
-    margin-right: 10px;
-    letter-spacing: .2em;
-    text-decoration: none;
-}
-
-.category:hover {
-    background: #016868;
-} */
 
 #design_hr hr {
     border: none;
@@ -779,4 +780,21 @@ video{
 }
 
 
+.bookmark_h2 {
+    margin-top: -25px;
+    margin-bottom: 5px;
+    color: #ff5733;
+}
+.trash_btn {
+    font-size: 16px !important;
+}
+.related_keywords {
+    margin-top: -15px;
+}
 
+.check_course {
+    background: #533681;
+    color: #fff !important;
+    font-family: 'montserrat';
+    font-size: 20px;
+}

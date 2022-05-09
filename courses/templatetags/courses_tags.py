@@ -67,7 +67,6 @@ def get_course_duration(course):
     if total_seconds >= 3600:
         return str(time.strftime("%Hh %Mm %Ss", time.gmtime(total_seconds)))
     return str(time.strftime("%Mm %Ss", time.gmtime(total_seconds)))
-    # return "Sinmidele"
 
 @register.filter
 def get_video_duration(video_file):

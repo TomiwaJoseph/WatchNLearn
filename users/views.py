@@ -3,8 +3,7 @@ from django.contrib import messages
 from .forms import SignupForm, UserUpdateForm, InstructorUpdateForm, CreateClassForm, CreateModuleForm, CreateContentForm
 from django.contrib.auth import authenticate, login, logout
 from django.contrib.auth.decorators import login_required
-from .models import Instructor, CustomUser
-from django.contrib.sites.shortcuts import get_current_site
+from .models import Instructor, CustomUser, BookmarkList
 from django.utils.encoding import force_bytes, force_text
 from django.utils.http import urlsafe_base64_encode, urlsafe_base64_decode, is_safe_url
 from .tokens import account_activation_token
@@ -15,6 +14,14 @@ from main.models import LandingPagePictures, InstructorPagePictures
 from courses.models import Course, Module
 from django.contrib.auth.decorators import permission_required
 from random import randint
+
+# Ajax Requests
+
+def delete_bookmark_item(request):
+    course_to_delete = int(request.GET.get('_course_id'))
+    bookmark_object_qs = BookmarkList.objects.get(user=request.user)
+    bookmark_object_qs.folder.remove(Course.objects.get(id=course_to_delete))
+    return HttpResponse('Success')
 
 
 @permission_required("customuser.is_superuser")
@@ -53,7 +60,7 @@ def sign_in_or_register(request):
             user.is_active = False
             user.save()
             
-            current_site = get_current_site(request).domain
+            current_site = f'{self.request.scheme}://{self.request.get_host()}'
             link = reverse('activate', kwargs={
                 'uidb64': urlsafe_base64_encode(force_bytes(user.pk)),
                 'token': account_activation_token.make_token(user)
@@ -215,3 +222,15 @@ def my_learning(request):
         'my_courses': my_courses,
     }
     return render(request, "users/my_learning.html", context)
+
+@login_required
+def my_bookmarks(request):
+    try:
+        all_bookmarked_courses = request.user.user_bookmarks.folder.all()
+    except:
+        all_bookmarked_courses = []
+        
+    context = {
+        'all_bookmarked_courses': all_bookmarked_courses,
+    }
+    return render(request, "users/my_bookmarks.html", context)

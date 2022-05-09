@@ -4,11 +4,15 @@ from django.contrib.auth import views as auth_views
 
 
 urlpatterns = [
+    # Ajax Requests
+    path('delete-bookmark-item/', views.delete_bookmark_item, name='delete_bookmark_item'),
+
     path('sign-in-or-register/', views.sign_in_or_register, name='signup_login'),
     path('profile/<slug:user_first_name>/<int:user_id>/', views.profile, name='profile'),
     path('instructor-profile/<slug:user_first_name>/<int:user_id>/', views.instructor_profile, name='instructor_profile'),
     path('edit-profile/', views.profile_edit, name='edit_profile'),
     path('my-learning/', views.my_learning, name='my_learning'),
+    path('my-bookmarks/', views.my_bookmarks, name='my_bookmarks'),
     path('become-an-instructor/', views.instructor, name='instructor'),
     path('login/', views.login_view, name='login'),
     path('logout/', auth_views.LogoutView.as_view(), name='logout'),

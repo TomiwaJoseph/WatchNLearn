@@ -42,5 +42,3 @@ class ModuleAdmin(admin.ModelAdmin):
 @admin.register(Content)
 class ContentAdmin(admin.ModelAdmin):
     list_display = ['module', 'title']
-
-

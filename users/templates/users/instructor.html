@@ -6,11 +6,13 @@
 
 <div class="row">
     <div class="col-md-12">
-        <div class="img_container">
-            <img class="instruct_img img-fluid" src="{{ instructor_picture.image.url }}" alt="teacher">
-            <div class="text-block">
-                <h1>Inspire creativity in others.</h1>
-                <p>Teach on WatchnLearn and share your passion with members around the world.</p>
+        <div class="img_container text-center">
+            <div class="thumbnail">
+                <img class="instruct_img img-fluid" src="{{ instructor_picture.image.url }}" alt="teacher">
+                <div class="caption">
+                    <h1>Inspire creativity in others.</h1>
+                    <p>Teach on WatchnLearn and share your passion with members around the world.</p>
+                </div>
             </div>
         </div>
     </div>
@@ -49,9 +51,11 @@
 </div>
 
 <div class="row">
-    <div class="col text-center">
-        <a href="#" class="btn instruct_utils">Instructor's Handbook</a>
-        <a href="{% url 'create_class' %}" class="btn instruct_utils">Start a Class</a>
+    <div class="col-sm-12 col-lg-6 col-md-6 mb-3 text-center">
+        <a href="#" class="btn instruct_utils w-75">Instructor's Handbook</a>
+    </div>
+    <div class="col-sm-12 col-lg-6 col-md-6 text-center">
+        <a href="{% url 'create_class' %}" class="btn instruct_utils w-75">Start a Class</a>
     </div>
 </div>
 

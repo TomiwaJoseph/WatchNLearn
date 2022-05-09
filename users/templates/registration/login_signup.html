@@ -24,7 +24,7 @@
                 <div class="form-group">
                     <input class="form-control mt-3" name="password" placeholder="Password" type="password" required>
                 </div>
-                <a class="" href="{% url 'password_reset' %}"><small>Forgot Password?</small></a>
+                <a href="{% url 'password_reset' %}"><small>Forgot Password?</small></a>
                 <div class="form-group">
                     <button class="btn btn-outline-info log mt-2" type="submit">Log in</button>
                 </div>
@@ -36,8 +36,8 @@
                 <hr class="text-danger">
             </div>
             <div class="col d-flex justify-content-center login_media">
-                <a href="{% url 'social:begin' 'facebook' %}"><i class="fab fa-facebook-f mx-2" aria-hidden="true"></i></a>
-                <a href="{% url 'social:begin' 'google-oauth2' %}"><i class="fab fa-google mx-2" aria-hidden="true"></i></a>
+                <a href="#"><i class="fab fa-facebook-f mx-2" aria-hidden="true"></i></a>
+                <a href="#"><i class="fab fa-google mx-2" aria-hidden="true"></i></a>
             </div>
         </div>
     </div>

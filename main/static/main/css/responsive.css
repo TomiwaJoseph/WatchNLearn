@@ -1,1 +1,108 @@
-/* add space underneath login */
+
+@media (max-width: 768px) and (min-width: 480px) {
+    .addresses i {
+        font-size: 16px !important;
+    }
+    .addresses p {
+        font-size: 15px !important;
+    }
+    .img_container p{
+        font-size: 25px;
+    } 
+    .img_container h1{
+        font-size: 50px;
+    }
+}
+
+/* @media (max-width: 760px) {
+    .img_container p{
+        font-size: 20px;
+    } 
+    .img_container h1{
+        font-size: 30px;
+    }
+} */
+
+@media (max-width: 500px) {
+    .img_container p{
+        font-size: 18px;
+    } 
+    .img_container h1{
+        font-size: 35px;
+    }
+}
+
+@media (max-width: 768px) {
+    #contact_form {
+        padding: 3px !important;
+    }
+    #contct_addr p{
+        text-align: left !important;
+    }
+}
+@media (max-width: 480px) {
+    #nav_col {
+        font-size: 32px !important;
+    }
+    .landing_image h1 {
+        font-size: 28px !important;
+    }
+    .landing_image img {
+        width: 90% !important;
+    }
+    .landing_image a{
+        width: 90% !important;
+    }
+    .nav-link {
+        font-size: 16px !important;
+    }
+    .course_filter_h1 {
+        font-size: 32px;
+        margin-top: -25px !important;
+    }
+    .pay_now_img,
+    .course_image {
+        width: 100% !important;
+    }
+    .related_keywords a {
+        width: 100%;
+        text-align: center;
+    }
+    
+}
+
+@media (max-width: 320px) {
+    #nav_col {
+        font-size: 24px !important;
+    }
+    .landing_image h1 {
+        font-size: 24px !important;
+    }
+    .landing_image img {
+        width: 100% !important;
+    }
+    .nav-link {
+        font-size: 14px !important;
+    }
+    .course_filter_h1 {
+        font-size: 28px;
+    }
+    .addresses i {
+        font-size: 16px !important;
+    }
+    .addresses p {
+        font-size: 15px !important;
+    }
+    #accordion span {
+        display: none;
+    }
+}
+
+@media (max-width: 344px) {
+    .img_container p{
+        font-size: 14px;
+    } 
+    .img_container h1{
+        font-size: 25px;
+    }
+}
