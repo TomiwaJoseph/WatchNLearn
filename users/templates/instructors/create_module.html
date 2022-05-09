@@ -1,0 +1,22 @@
+{% extends "main/base.html" %}
+{% block title %}WatchnLearn | Create Module{% endblock %}
+{% load crispy_forms_tags %}
+
+{% block content %}
+
+<h1><span class="category_filter_title">Create Module</span></h1>
+<hr class="mb-4">
+
+<div class="content-section">
+    <form action="{% url 'create_module' %}" method="POST">
+        {% csrf_token %}
+        {{ module_create_form|crispy }}
+        <div class="form-group">
+            <button class="btn btn-outline-info create_class_btn w-100 mt-2" type="submit">Create Module</button>
+        </div>
+    </form>
+</div>
+<hr>
+<a href="{% url 'create_content' %}" class="btn create_module_btn w-100">Add Content</a>
+
+{% endblock %}

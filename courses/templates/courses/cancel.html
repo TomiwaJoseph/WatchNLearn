@@ -1,0 +1,25 @@
+{% extends 'main/base.html' %}
+{% block title %}WatchnLearn | Checkout Canceled{% endblock %}
+{% load courses_tags %}
+
+{% block content %}
+
+<div class="row">
+  <div class="col text-center">
+    <h1><span class="category_filter_title">Checkout Canceled!</span></h1>
+    <hr class="awaiting_approv mb-4">
+  </div>
+</div>
+
+<div class="row">
+  <div class="col-md-6 my-auto mx-auto">
+    <div class="content-section">
+      <div class="alert alert-info my-2 text-center pending_msg">
+        <p>Not the course you are looking for? Shop around then come back to pay!</p>
+      </div>
+    </div>
+  </div>
+</div>
+<hr class="awaiting_approv mb-4">
+
+{% endblock %}

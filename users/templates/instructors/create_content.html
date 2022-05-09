@@ -1,0 +1,25 @@
+{% extends "main/base.html" %}
+{% block title %}WatchnLearn | Add Content{% endblock %}
+{% load crispy_forms_tags %}
+
+
+{% block content %}
+
+<h1><span class="category_filter_title">Add Content</span></h1>
+<hr class="mb-4">
+
+<div class="content-section">
+    <form action="{% url 'create_content' %}" method="POST" enctype="multipart/form-data">
+        {% csrf_token %}
+        {{ content_create_form.media }}
+        {{ content_create_form|crispy }}
+        <div class="form-group">
+            <button class="btn btn-outline-info create_class_btn w-100 mt-2" type="submit">Add Content</button>
+        </div>
+    </form>
+</div>
+<hr>
+<a href="{% url 'create_module' %}" class="btn create_module_btn w-100">Create Module</a>
+
+
+{% endblock %}

@@ -1,0 +1,8 @@
+stripe==2.55.1
+django_ckeditor==6.0.0
+six==1.14.0
+opencv_python==4.5.4.58
+Django==3.2.5
+django_taggit==2.0.0
+Pillow==8.4.0
+python-decouple==3.5

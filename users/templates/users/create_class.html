@@ -1,0 +1,23 @@
+{% extends "main/base.html" %}
+{% block title %}WatchnLearn | Create Class{% endblock %}
+{% load crispy_forms_tags %}
+
+
+{% block content %}
+
+<h1><span class="category_filter_title">Create Class</span></h1>
+<hr class="mb-4">
+
+<div class="content-section">
+    <form action="{% url 'create_class' %}" method="POST" enctype="multipart/form-data">
+        {% csrf_token %}
+        {{ class_create_form.media }}
+        {{ class_create_form|crispy }}
+        <div class="form-group">
+            <button class="btn btn-outline-info create_class_btn w-100 mt-2" type="submit">Create Class</button>
+        </div>
+    </form>
+</div>
+
+
+{% endblock %}

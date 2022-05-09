@@ -1,0 +1,207 @@
+{% extends 'main/base.html' %}
+{% load courses_tags %}
+{% load crispy_forms_tags %}
+
+{% block title %}WatchnLearn | {{ object.title }}{% endblock %}
+
+{% block content %}
+
+<div class="row mb-4">
+  <div class="col-md-4">
+    <img src="{{ object.thumbnail_image.url }}" class="img-fluid" alt="{{ object.title }}">
+  </div>
+  <div class="col-md-8 my-auto">
+    <h2>{{ object.title }}</h2>
+    <a href="{% url 'instructor_profile' object.instructor.first_name object.instructor.user_instructor.first.id %}"><span class="author mr-2 text-secondary"><img
+          src="{{ object.instructor.user_instructor.all.first.profile_picture.url }}" alt="" class="img-fluid">
+        {{ object.instructor }}</span>
+    </a>
+    <div>
+      {% for desc in object.instructor.user_instructor.all.first.descriptions.all %}
+      <a class="mt-3 mr-3 descriptions">{{ desc }}</a>
+      {% endfor %}
+    </div>
+  </div>
+</div>
+<hr>
+{% if not course_student %}
+  <a href="{% url 'confirm_buy' object.slug %}" class="btn buy_now w-100">Buy Now</a>
+  <hr>
+{% endif %}
+<button type="button" id="goTop" class="btn"><i class="fa fa-arrow-circle-up"></i></button>
+
+<div class="container">
+  <div class="row details_row">
+    <div class="col-xs-6 col-sm-3 col-md-6 col-lg-4">
+      <div class="text-center">
+        <i class="fa fa-video"></i>
+        <p>32 hours videos</p>
+      </div>
+    </div>
+    <div class="col-xs-6 col-sm-3 col-md-6 col-lg-4">
+      <div class="text-center">
+        <i class="fa fa-infinity"></i>
+        <p>Full lifetime access</p>
+      </div>
+    </div>
+    <div class="col-xs-6 col-sm-3 col-md-6 col-lg-4">
+      <div class="text-center">
+        <i class="fa fa-tasks"></i>
+        <p>Assignments</p>
+      </div>
+    </div>
+    <div class="col-xs-6 col-sm-3 col-md-6 col-lg-4">
+      <div class="text-center">
+        <i class="fa fa-bullseye"></i>
+        <p>Hands-on class project</p>
+      </div>
+    </div>
+    <div class="col-xs-6 col-sm-3 col-md-6 col-lg-4">
+      <div class="text-center">
+        <i class="fa fa-key"></i>
+        <!-- <i class="fa fa-universal-access"></i> -->
+        <p>Access on any device</p>
+      </div>
+    </div>
+    <div class="col-xs-6 col-sm-3 col-md-6 col-lg-4">
+      <div class="text-center">
+        <i class="fa fa-graduation-cap"></i>
+        <p>Certificate of completion</p>
+      </div>
+    </div>
+  </div>
+</div>
+<hr>
+
+<div class="row">
+  <div class="col">
+    <h3 class="lesson">About this Class</h3>
+    <hr>
+    <p>{{ object.about_the_course|safe }}</p>
+  </div>
+</div>
+<hr>
+
+<div class="row">
+  <div class="col">
+    <h3 class="lesson">Lessons in This Class</h3>
+    <hr>
+  </div>
+</div>
+
+<div id="accordion" class="myaccordion">
+  {% for module in all_modules %}
+  <div class="card mb-1">
+    <div class="card-header" id="heading{{ module.id }}">
+      <h2 class="mb-0">
+        <button class="d-flex align-items-center justify-content-between btn btn-link collapsed" data-toggle="collapse"
+          data-target="#collapse{{ module.id }}" aria-expanded="false" aria-controls="collapse{{ module.id }}">
+          {{ module.module_title }}
+          <span class="fa-stack fa-sm">
+            <i class="fas fa-circle fa-stack-2x"></i>
+            <i class="fas fa-plus fa-stack-1x fa-inverse"></i>
+          </span>
+        </button>
+      </h2>
+    </div>
+    <div id="collapse{{ module.id }}" class="collapse" aria-labelledby="heading{{ module.id }}"
+      data-parent="#accordion">
+      <div class="card-body">
+        <ul>
+          {% for content in module.modules_content.all %}
+          <div class="module_content d-flex justify-content-between">
+            <div>
+              <i class="fa fa-play-circle"></i>
+              <a href="{% url 'play_content' object.slug module.module_title_slug content.id %}">{{ content.title }}</a>
+            </div>
+            <p>{{ content|get_video_duration }}</p>
+          </div>
+          {% endfor %}
+        </ul>
+      </div>
+    </div>
+  </div>
+  {% endfor %}
+</div>
+
+<hr>
+<div class="row">
+  <div class="col">
+    <h3 class="lesson">Meet Your Teacher</h3>
+    <hr>
+    <span class="meet_author mr-2"><img src="{{ object.instructor.user_instructor.all.first.profile_picture.url }}" alt="" class="img-fluid">
+      {{ object.instructor }}
+    </span>
+    <div>
+      {% for desc in object.instructor.user_instructor.all.first.descriptions.all %}
+      <a class="mt-3 mr-3 descriptions">{{ desc }}</a>
+      {% endfor %}
+    </div>
+    <p>{{ object.instructor.user_instructor.all.first.about|safe|truncatechars:200 }}</p>
+    <a class="see_full_profile" href="{% url 'instructor_profile' object.instructor.first_name object.instructor.user_instructor.first.id %}">See full profile</a>
+  </div>
+</div>
+<hr>
+
+<div class="row">
+  <div class="col">
+    <h3 class="lesson">Related Skills</h3>
+  </div>
+</div>
+<hr>
+<div class="row">
+  {% for tag in object.keywords.all %}
+    <div class="col-md-3 col-sm-4 col-xm-6">
+      <a href="{% url 'tag_search' tag.slug %}" class="mt-3 mr-3 descriptions">{{ tag }}</a>
+    </div>
+  {% endfor %}
+</div>
+
+{% if course_student %}
+  <hr>
+  <div class="row">
+    <div class="col">
+      <h3 class="lesson">Expections Met?</h3>
+    </div>
+  </div>
+  <hr>
+  <div class="row">
+    <div class="col-md-12">
+      <form action="{% url 'save_review' %}" method="POST">
+        {% csrf_token %}
+        <input type="hidden" name="course" value="{{ object }}">
+        {{ review_form | crispy }}
+        <button type="submit" class="btn btn-outline-info log my-3 text-uppercase">Add review</button>
+      </form>
+    </div>
+  </div>
+{% endif %}
+
+{% if all_reviews %}
+  <hr>
+  <div class="row">
+    <div class="col">
+      <h3 class="lesson">Course Reviews</h3>
+    </div>
+  </div>
+  <hr>
+  <div class="row">
+    {% for review in all_reviews %}
+      <div class="col-md-4">
+        <div class="review_box">
+          <h5>{{ review.student }}</h5>
+          {% for star in review.stars|check_star %}
+            <i class="fa fa-star"></i>
+          {% endfor %}
+          <p class="text-secondary timestamp">{{ review.timestamp|format_timesince }}</p>
+          <hr>
+          <p>{{ review.body }}</p>
+        </div>
+      </div>
+    {% endfor %}
+  </div>
+{% endif %}
+
+{% include "main/features.html" %}
+
+{% endblock %}

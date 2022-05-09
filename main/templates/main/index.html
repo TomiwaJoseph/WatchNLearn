@@ -1,0 +1,16 @@
+{% extends 'main/base.html' %}
+
+
+{% block content%}
+
+<div class="row">
+    <div class="col-md-12 landing_image text-center">
+        <img src="{{ random_picture.image.url }}" class="img-fluid w-75 d-block mx-auto" alt="{{random_picture.caption }}">
+        <h1 class="mt-3">{{ random_picture.caption }}</h1>
+        <a href="{% url 'courses' %}" class="my-3 btn btn-info">View Courses</a>
+    </div>
+</div>
+
+{% include "main/features.html" %}
+
+{% endblock %}

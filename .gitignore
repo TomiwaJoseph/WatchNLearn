@@ -1,0 +1,8 @@
+__pycache__
+migrations
+test.py
+.env
+MODELS.md
+tipsntricks.html
+cert.crt
+cert.key

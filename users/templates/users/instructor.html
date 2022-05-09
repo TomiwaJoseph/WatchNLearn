@@ -1,0 +1,59 @@
+{% extends "main/base.html" %}
+{% block title %}WatchnLearn | Teach{% endblock %}
+
+
+{% block content %}
+
+<div class="row">
+    <div class="col-md-12">
+        <div class="img_container">
+            <img class="instruct_img img-fluid" src="{{ instructor_picture.image.url }}" alt="teacher">
+            <div class="text-block">
+                <h1>Inspire creativity in others.</h1>
+                <p>Teach on WatchnLearn and share your passion with members around the world.</p>
+            </div>
+        </div>
+    </div>
+</div>
+<hr>
+
+<div class="row">
+    <div class="col text-center">
+        <h3 class="instruct_headers">Why Teach on WatchnLearn</h3>
+    </div>
+</div>
+
+<div class="container">
+    <hr class="mb-4">
+    <div class="row">
+        <div class="col-xs-6 col-sm-3 col-md-6 col-lg-4">
+            <div class="instruct_item text-center">
+                <i class="fa fa-money-check-alt"></i>
+                <h3>Earn Money<h3>
+            </div>
+        </div>
+        <div class="col-xs-6 col-sm-3 col-md-6 col-lg-4">
+            <div class="instruct_item text-center">
+                <i class="fa fa-users"></i>
+                <h3>Build your Community</h3>
+            </div>
+        </div>
+        <div class="col-xs-6 col-sm-3 col-md-6 col-lg-4">
+            <div class="instruct_item text-center">
+                <i class="fa fa-lightbulb"></i>
+                <h3>Inspire others<h3>
+            </div>
+        </div>
+    </div>
+    <hr>
+</div>
+
+<div class="row">
+    <div class="col text-center">
+        <a href="#" class="btn instruct_utils">Instructor's Handbook</a>
+        <a href="{% url 'create_class' %}" class="btn instruct_utils">Start a Class</a>
+    </div>
+</div>
+
+
+{% endblock %}

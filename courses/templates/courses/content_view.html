@@ -1,0 +1,28 @@
+{% extends "main/base.html" %}
+{% block title %}WatchnLearn | {{ content.title }}{% endblock %}
+
+{% block content %}
+
+<div class="row text-left">
+    <div class="col">
+        <video class="img-fluid" src="{{ content.content_video.url }}" controls controlsList="nodownload"></video>
+    </div>
+</div>
+
+<div class="row">
+    <div class="col">
+        <hr>
+        <h2 class="lesson">{{ content.title }}</h2>
+        <hr>
+        <p>{{ content.content_description|safe }}</p>
+        {% if content.content_image %}
+            <a class="content_extras" href="{{ content.content_image.url }}">Image File</a>
+        {% endif %}
+        {% if content.content_file %}
+            <a class="content_extras" href="{{ content.content_file.url }}">Text File</a>
+        {% endif %}
+    </div>
+</div>
+
+
+{% endblock %}

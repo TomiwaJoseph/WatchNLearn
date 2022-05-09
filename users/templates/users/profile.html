@@ -1,0 +1,56 @@
+{% extends 'main/base.html' %}
+{% block title %}WatchnLearn | Profile{% endblock %}
+{% load courses_tags %}
+
+
+{% block content %}
+
+<div class="row">
+    <div class="col">
+      <h3 class="lesson">My Profile</h3>
+      <hr>
+      <span class="meet_author mr-2"><img src="{{ instructor.profile_picture.url }}" alt="" class="img-fluid">
+        {{ instructor }}
+      </span>
+      <div>
+        {% for desc in instructor.descriptions.all %}
+        <a class="mt-3 mr-3 descriptions">{{ desc }}</a>
+        {% endfor %}
+      </div>
+      <p>{{ instructor.about|safe }}</p>
+    </div>
+</div>
+<a class="text-info" href="{% url 'edit_profile' %}">Edit Profile</a>
+<hr>
+
+<h2 class="lesson">My Published Courses</h2>
+<hr>
+<div class="row">
+    {% for course in my_courses %}
+        <div class="col-md-4 mb-5">
+            <div class="card courses_card">
+                <img src="{{ course.thumbnail_image.url }}" alt="{{ course.title }}" class="card-img-top img-fluid">
+                <div class="card-body">
+                    <div class="row mt-2">
+                        <div class="col d-flex justify-content-between little_course_info">
+                            <p>{{ course.students.all|length }} student{{ course.students.all|length|pluralize:",s" }}</p>
+                            <p>{{ course|get_course_duration }}</p>
+                        </div>
+                    </div>
+                    <a href="{% url 'course_detail' course.slug %}">{{ course.title }}</a>
+                    <div class="row mt-2 course_details">
+                        <div class="col d-flex justify-content-between">
+                            <p>{{ course.instructor }}</p>
+                            <div>
+                                <a><i class="fa fa-bookmark"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    {% endfor %}
+</div>
+
+{% endblock %}
+

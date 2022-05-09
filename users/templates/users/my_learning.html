@@ -1,0 +1,42 @@
+{% extends 'main/base.html' %}
+{% block title %}WatchnLearn | My Learning{% endblock %}
+{% load courses_tags %}
+
+{% block content %}
+
+{% if my_courses %}
+    <div class="row">
+        {% for course in my_courses %}
+        <div class="col-md-4 mb-5">
+            <div class="card courses_card">
+                <img src="{{ course.thumbnail_image.url }}" alt="{{ course.title }}" class="card-img-top img-fluid">
+                <div class="card-body">
+                    <div class="row mt-2">
+                        <div class="col d-flex justify-content-between little_course_info">
+                            <p>{{ course.students.all|length }} student{{ course.students.all|length|pluralize:",s" }}</p>
+                            <p>{{ course|get_course_duration }}</p>
+                        </div>
+                    </div>
+                    <a href="{% url 'course_detail' course.slug %}">{{ course.title }}</a>
+                    <div class="row mt-2 course_details">
+                        <div class="col d-flex justify-content-between">
+                            <p>{{ course.instructor }}</p>
+                            <div>
+                                <a><i class="fa fa-bookmark"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        {% endfor %}
+    </div>
+{% else %}
+    <div class="row">
+        <div class="col-md-12">
+            <h2>You have no bought course.</h2>
+        </div>
+    </div>
+{% endif %}
+
+{% endblock %}
