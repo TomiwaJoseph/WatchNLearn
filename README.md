@@ -37,15 +37,11 @@ It has the following functionalities:
 - Customized admin panel
 - ... and more
 
-## Setup Guide
+## Fonts Used
 
-To get this project up and running, you should have python installed on your computer. Install these fonts also:
-
-- Fonts Used
-
-```buildoutcfg
-Red Rose
-Verdana
-Montserrat
-Dosis
+```
+- Red Rose
+- Verdana
+- Montserrat
+- Dosis
 ```
