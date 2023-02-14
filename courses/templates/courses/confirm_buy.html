@@ -9,12 +9,14 @@
 
 <div class="row mb-4">
     <div class="col-md-4">
-      <img src="{{ course_to_buy.thumbnail_image.url }}" class="img-fluid" alt="{{ course_to_buy.title }}">
+      <img src="{{ course_to_buy.thumbnail_image.url }}" class="pay_now_img img-fluid" alt="{{ course_to_buy.title }}">
     </div>
     <div class="col-md-8 my-auto">
         <h2>{{ course_to_buy.title }}</h2>
-        <a class="mt-3 mr-3 stripe_pay_tag">${{ course_to_buy.discount_price }}</a>
-        <button type="button" class="btn pay_now w-50" id="checkout-button">Pay Now</button>
+        <div class="d-flex justify-content-between">
+          <button type="button" class="btn stripe_pay_tag">${{ course_to_buy.discount_price }}</button>
+          <button type="button" class="btn pay_now w-100" id="checkout-button">Pay Now</button>
+        </div>
     </div>
 </div>
 <hr>

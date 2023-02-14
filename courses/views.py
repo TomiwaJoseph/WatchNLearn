@@ -13,21 +13,47 @@ from django.views.decorators.csrf import csrf_exempt
 import stripe
 from django.core.mail import send_mail
 from django.contrib.auth.mixins import LoginRequiredMixin
-from users.models import Profile, CustomUser
+from users.models import Profile, CustomUser, BookmarkList
+
+# ajax request starts
 
 
+def bookmark_it(request):
+    course_id = int(request.GET.get('course_id'))
+    course_to_add_to_bookmarks = Course.objects.get(id=course_id)
+    try:
+        check_bookmarklist_exist = BookmarkList.objects.filter(
+            user=request.user).first()
+        if check_bookmarklist_exist:
+            check_course_exist = course_id in [
+                i.id for i in check_bookmarklist_exist.folder.all()]
+            if not check_course_exist:
+                check_bookmarklist_exist.folder.add(course_to_add_to_bookmarks)
+        else:
+            create_new_bookmarkslist = BookmarkList.objects.create(
+                user=request.user)
+            create_new_bookmarkslist
+            create_new_bookmarkslist.folder.add(course_to_add_to_bookmarks)
+        return JsonResponse({'status': 'success'})
+    except TypeError:
+        return JsonResponse({'status': 'fail'})
+
+
+# ajax request ends
 stripe.api_key = settings.STRIPE_SECRET_KEY
+
 
 class CourseListView(ListView):
     queryset = Course.objects.filter(status="published")
     template_name = 'courses/courses.html'
     context_object_name = 'courses'
     paginate_by = 6
-    
+
+
 class CourseDetailView(DetailView):
     model = Course
     template_name = 'courses/course_detail.html'
-    
+
     def get_context_data(self, **kwargs):
         context = super().get_context_data(**kwargs)
         object_in_detail = context['object']
@@ -48,13 +74,14 @@ def get_category_courses(request, category):
     )
     all_filtered_category = request.GET.get('page', 1)
     all_category_courses = Paginator(filtered_category, 6)
-    
+
     try:
         category_courses = all_category_courses.page(all_filtered_category)
     except PageNotAnInteger:
         category_courses = all_category_courses.page(1)
     except EmptyPage:
-        category_courses = all_category_courses.page(category_courses.num_pages)
+        category_courses = all_category_courses.page(
+            category_courses.num_pages)
 
     context = {
         'category_courses': category_courses,
@@ -63,18 +90,22 @@ def get_category_courses(request, category):
     }
     return render(request, 'courses/course_filter.html', context)
 
+
 @login_required
 def view_content(request, obj, module_slug, content_id):
-    course = Module.objects.get(course__slug=obj, module_title_slug=module_slug).course
+    course = Module.objects.get(
+        course__slug=obj, module_title_slug=module_slug).course
     if course in request.user.profile.courses_bought.all() or course.discount_price == 0:
         content = Content.objects.get(id=content_id)
     else:
-        messages.info(request, "You have to buy the course to view the content")
+        messages.info(
+            request, "You have to buy the course to view the content")
         return redirect('course_detail', slug=course.slug)
     context = {
         'content': content,
     }
     return render(request, "courses/content_view.html", context)
+
 
 def save_review(request):
     if request.method == "POST":
@@ -89,8 +120,9 @@ def save_review(request):
                 obj.course = course
                 obj.student = request.user
                 obj.save()
-                
+
         return redirect('course_detail', slug=course.slug)
+
 
 def free_course(request):
     query = Course.objects.filter(discount_price=0, status="published")
@@ -99,11 +131,14 @@ def free_course(request):
     }
     return render(request, "courses/free-courses.html", context)
 
+
 def success(request):
     return render(request, 'courses/success.html')
 
+
 def cancel(request):
     return render(request, 'courses/cancel.html')
+
 
 @login_required
 def confirm_buy(request, course):
@@ -118,11 +153,12 @@ def confirm_buy(request, course):
     }
     return render(request, "courses/confirm_buy.html", context)
 
+
 class CreateCheckoutSessionView(View):
     def post(self, request, *args, **kwargs):
         course_to_buy = int(request.session['course_to_buy'])
         course = Course.objects.get(id=course_to_buy)
-        domain_url = "http://127.0.0.1:8000"
+        domain_url = f'{self.request.scheme}://{self.request.get_host()}'
         checkout_session = stripe.checkout.Session.create(
             payment_method_types=['card'],
             line_items=[
@@ -143,8 +179,8 @@ class CreateCheckoutSessionView(View):
                 "current_user_email": self.request.user.email,
             },
             mode='payment',
-            success_url = domain_url + '/course/purchase/success/',
-            cancel_url = domain_url + '/course/purchase/cancel/',
+            success_url=domain_url + '/course/purchase/success/',
+            cancel_url=domain_url + '/course/purchase/cancel/',
         )
         return JsonResponse({
             'id': checkout_session.id
@@ -171,14 +207,14 @@ def stripe_webhook(request):
     # Handle the checkout.session.completed event
     if event['type'] == 'checkout.session.completed':
         session = event['data']['object']
-        
+
         customer_email = session["customer_details"]["email"]
         course_id = session["metadata"]["course_id"]
         email = session["metadata"]["current_user_email"]
 
         course = Course.objects.get(id=course_id)
         user = Profile.objects.get(user__email=email)
-                
+
         course.students.add(user.user)
         user.courses_bought.add(course)
 
@@ -190,4 +226,3 @@ def stripe_webhook(request):
         )
 
     return HttpResponse(status=200)
-

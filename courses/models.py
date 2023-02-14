@@ -12,7 +12,7 @@ from ckeditor.fields import RichTextField
 from django.template.loader import render_to_string
 
 
-language_list = [(k, v['name']) for k,v in LANG_INFO.items() if len(v) > 1]
+language_list = [(k, v['name']) for k, v in LANG_INFO.items() if len(v) > 1]
 star_list = [('1', 'One star'), ('2', 'Two stars'), ('3', 'Three stars'),
              ('4', 'Four stars'), ('5', 'Five stars')]
 course_status = [('draft', 'Draft'), ('published', 'Published')]
@@ -29,7 +29,7 @@ class Category(models.Model):
     def __str__(self):
         return self.category_title
 
- 
+
 class Course(models.Model):
     instructor = models.ForeignKey("users.CustomUser", on_delete=models.CASCADE,
                                    related_name='course_instructor')
@@ -44,33 +44,34 @@ class Course(models.Model):
     about_the_course = RichTextField()
     date_created = models.DateTimeField(auto_now_add=True)
     keywords = TaggableManager()
-    students = models.ManyToManyField(settings.AUTH_USER_MODEL, related_name='course_student', blank=True)
+    students = models.ManyToManyField(
+        settings.AUTH_USER_MODEL, related_name='course_student', blank=True)
     status = models.CharField(max_length=50, choices=course_status)
 
     class Meta:
         ordering = ['date_created']
-        
+
     def get_stripe_price(self):
         return int(self.discount_price) * 100
-        
+
     def __str__(self):
         return self.title
-    
+
     def get_absolute_url(self):
         return reverse("course_detail", kwargs={"pk": self.pk})
-    
+
     def save(self, *args, **kwargs):
         if not self.slug:
             self.slug = slugify(self.title)
-        
+
         img = Image.open(self.thumbnail_image)
         output = BytesIO()
         img = img.resize((300, 200))
         img.save(output, format="JPEG", optimize=True, quality=100)
         output.seek(0)
         self.thumbnail_image = InMemoryUploadedFile(output, "ImageField",
-                f"{self.slug}.jpg", 'image/jpeg',
-                sys.getsizeof(output), None)
+                                                    f"{self.slug}.jpg", 'image/jpeg',
+                                                    sys.getsizeof(output), None)
         super(Course, self).save(*args, **kwargs)
 
 
@@ -79,9 +80,9 @@ class Module(models.Model):
                                related_name='course_modules')
     module_title = models.CharField(max_length=200)
     module_title_slug = models.SlugField(max_length=200, null=True)
-    
+
     def __str__(self):
-        return self.course.title  + " - " + self.module_title
+        return self.course.title + " - " + self.module_title
 
     def save(self, *args, **kwargs):
         if not self.module_title_slug:
@@ -95,21 +96,23 @@ class Content(models.Model):
     title = models.CharField(max_length=50)
     content_description = RichTextField()
     content_video = models.FileField(upload_to='content_videos')
-    content_image = models.ImageField(upload_to='content_images', null=True, blank=True)
-    content_file = models.FileField(upload_to="content_files", null=True, blank=True)
-    
+    content_image = models.ImageField(
+        upload_to='content_images', null=True, blank=True)
+    content_file = models.FileField(
+        upload_to="content_files", null=True, blank=True)
+
     def __str__(self):
         return f"{self.module}'s content"
-    
-    
+
+
 class Review(models.Model):
     course = models.ForeignKey(Course, on_delete=models.CASCADE,
                                related_name='course_review')
-    student = models.ForeignKey(settings.AUTH_USER_MODEL, on_delete=models.CASCADE)
+    student = models.ForeignKey(
+        settings.AUTH_USER_MODEL, on_delete=models.CASCADE)
     stars = models.CharField(max_length=20, choices=star_list)
     body = models.TextField()
     timestamp = models.DateTimeField(auto_now_add=True, db_index=True)
 
     def __str__(self):
         return self.student.get_name() + "'s review"
-    
