@@ -8,7 +8,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" type="text/css" href="{% static 'main/css/bootstrap.css' %}">
     <link rel="stylesheet" type="text/css" href="{% static 'main/css/style.css' %}">
+    <link rel="stylesheet" type="text/css" href="{% static 'main/css/responsive.css' %}">
     <link rel="stylesheet" type="text/css" href="{% static 'main/fontawesome-free/css/all.min.css' %}">
+    {% comment %} <style>
+        @import url('https://fonts.googleapis.com/css?family=Dosis&display=swap');
+        @import url('https://fonts.googleapis.com/css?family=Red+Rose&display=swap');
+        @import url('https://fonts.googleapis.com/css?family=Verdana&display=swap');
+        @import url('https://fonts.googleapis.com/css?family=Montserrat&display=swap');
+    </style> {% endcomment %}
     <title>{% block title %} WatchnLearn {% endblock %}</title>
     {% block extra_head %} {% endblock extra_head %}
 </head>
@@ -17,13 +24,13 @@
     <nav class="navbar navbar-expand-lg navbar-dark rounded">
         <div class="container">
             <a class="navbar-brand" href="{% url 'index' %}" id="nav_col">
-                <!-- <img src="imgs/logo.png" alt="#" /> -->
                 WatchnLearn</a>
             <ul class="navbar-nav d-block d-lg-none ml-auto">
             </ul>
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#show-menu"
                 aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
+                <!-- <span class="navbar-toggler-icon"></span> -->
+                <i class="fas fa-bars"></i>
             </button>
 
             <div class="collapse navbar-collapse" id="show-menu">
@@ -68,10 +75,11 @@
                                     <a class="nav-link" href="{% url 'create_class' %}">Create Class</a>
                                     <a class="nav-link" href="{% url 'create_module' %}">Create Module</a>
                                     <a class="nav-link" href="{% url 'create_content' %}">Add Content</a>
-                                    <a class="nav-link" href="{% url 'my_learning' %}">My Learning</a>
+                                    <a class="nav-link" href="{% url 'my_learning' %}">My Courses</a>
                                 {% endif %}
                                 {% if not request.user.is_instructor %}
-                                    <a class="nav-link" href="{% url 'my_learning' %}">My Learning</a>
+                                    <a class="nav-link" href="{% url 'my_learning' %}">My Courses</a>
+                                    <a class="nav-link" href="{% url 'my_bookmarks' %}">Bookmarks</a>
                                 {% endif %}
                                 {% if request.user.is_superuser %}
                                     <a class="nav-link" href="{% url 'drafts'  %}">Drafts</a>
@@ -110,7 +118,20 @@
     <div class="footer bg-dark">
         <div class="container">
             <div class="row" id='footer'>
-                <div class="col-md-3">
+                <div class="col-md-12 col-lg-12 col-sm-12 d-flex justify-content-around">
+                    <div class="footer-top-box">
+                        <div class="social_media">
+                            <a href="#"><i class="fab fa-facebook" aria-hidden="true"></i></a>
+                            <a href="#"><i class="fab fa-twitter" aria-hidden="true"></i></a>
+                            <a href="https://github.com/TomiwaJoseph" target="blank"><i class="fab fa-github"
+                                    aria-hidden="true"></i></a>
+                            <a href="#"><i class="fab fa-linkedin" aria-hidden="true"></i></a>
+                            <a href="#"><i class="fab fa-google-plus" aria-hidden="true"></i></a>
+                        </div>
+                        <hr class="foot_hr">
+                    </div>
+                </div>
+                <div class="col-md-4 col-lg-4">
                     <div class="footer-top-box">
                         <h3>Contact us</h3>
                         <hr class="foot_hr">
@@ -123,7 +144,7 @@
                         </p>
                     </div>
                 </div>
-                <div class="col-md-3">
+                <div class="col-md-4 col-lg-4">
                     <div class="footer-top-box">
                         <h3>Newsletter</h3>
                         <hr class="foot_hr">
@@ -159,7 +180,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-md-3">
+                <div class="col-md-4 col-lg-4">
                     <div class="footer-top-box">
                         <h3>Additional Links</h3>
                         <hr class="foot_hr">
@@ -169,21 +190,6 @@
                             <a href="#">Privacy policy</a>
                             <a href="{% url 'instructor' %}">Become an Instructor</a>
                             <a href="{% url 'free_courses' %}"><span>Free</span></a>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-3">
-                    <div class="footer-top-box">
-                        <h3>Social Media</h3>
-                        <hr class="foot_hr">
-                        <p>Connect and follow us here...</p>
-                        <div class="social_media">
-                            <a href="#"><i class="fab fa-facebook" aria-hidden="true"></i></a>
-                            <a href="#"><i class="fab fa-twitter" aria-hidden="true"></i></a>
-                            <a href="https://github.com/TomiwaJoseph" target="blank"><i class="fab fa-github"
-                                    aria-hidden="true"></i></a>
-                            <a href="#"><i class="fab fa-linkedin" aria-hidden="true"></i></a>
-                            <a href="#"><i class="fab fa-google-plus" aria-hidden="true"></i></a>
                         </div>
                     </div>
                 </div>
