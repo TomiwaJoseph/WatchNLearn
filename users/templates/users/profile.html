@@ -42,7 +42,7 @@
                         <div class="col d-flex justify-content-between">
                             <p>{{ course.instructor }}</p>
                             <div>
-                                <a><i class="fa fa-bookmark"></i></a>
+                                <a><i class="fa fa-bookmark bookmark_btn {% if course in user.user_bookmarks.folder.all %}active{% endif %}" data-id="{{ course.id }}"></i></a>
                             </div>
                         </div>
                     </div>
