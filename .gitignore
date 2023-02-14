@@ -1,8 +1,4 @@
+/watchnlearn_env
 __pycache__
 migrations
-test.py
 .env
-MODELS.md
-tipsntricks.html
-cert.crt
-cert.key
