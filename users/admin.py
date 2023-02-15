@@ -29,10 +29,10 @@ class UserAdmin(BaseUserAdmin):
 
 @admin.register(Instructor)
 class InstructorAdmin(admin.ModelAdmin):
-    list_display = ['user', 'instructor_name', 'expert_in']
+    list_display = ['user', 'picture_path', 'expert_in']
 
-    def instructor_name(self, obj):
-        return obj
+    def picture_path(self, obj):
+        return obj.profile_picture
 
 
 admin.site.register(Profile)

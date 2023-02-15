@@ -3,11 +3,14 @@ from django.contrib.auth.models import BaseUserManager, AbstractUser
 from django.conf import settings
 from taggit.managers import TaggableManager
 from ckeditor.fields import RichTextField
-from PIL import Image
+from PIL import Image, ImageTk
 from io import BytesIO
 from django.core.files.uploadedfile import InMemoryUploadedFile
 import sys
+import cv2
+import numpy
 from courses.models import Course
+from resizeimage import resizeimage
 
 
 class UserManager(BaseUserManager):
@@ -76,15 +79,16 @@ class Instructor(models.Model):
 
     def save(self, *args, **kwargs):
         full_name = self.user.first_name + "_" + self.user.last_name
+        with Image.open(self.profile_picture) as image:
+            cover = resizeimage.resize_cover(image, [300, 300])
+            cover = cover.convert('RGB')
+            output = BytesIO()
+            cover.save(output, format="JPEG", optimize=True, quality=100)
+            output.seek(0)
+            self.profile_picture = InMemoryUploadedFile(output, "ImageField",
+                                                        f"{full_name}.jpg", 'image/jpeg',
+                                                        sys.getsizeof(output), None)
 
-        img = Image.open(self.profile_picture)
-        output = BytesIO()
-        img = img.resize((300, 300))
-        img.save(output, format="JPEG", optimize=True, quality=100)
-        output.seek(0)
-        self.profile_picture = InMemoryUploadedFile(output, "ImageField",
-                                                    f"{full_name}.jpg", 'image/jpeg',
-                                                    sys.getsizeof(output), None)
         super(Instructor, self).save(*args, **kwargs)
 
 

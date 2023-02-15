@@ -28,6 +28,11 @@
                 <div class="form-group">
                     <button class="btn btn-outline-info log mt-2" type="submit">Log in</button>
                 </div>
+                <button class="btn demo-button">
+                    <a href="{% url 'login_demo_user' %}?next_path={{request.GET.next}}">
+                        Login as Demo User
+                    </a>
+                </button>
             </form>
             <hr>
             <div class="col d-flex justify-content-center text-center" id='design_hr'>

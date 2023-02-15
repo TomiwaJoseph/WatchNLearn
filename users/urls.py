@@ -18,6 +18,7 @@ urlpatterns = [
     path('my-bookmarks/', views.my_bookmarks, name='my_bookmarks'),
     path('become-an-instructor/', views.instructor, name='instructor'),
     path('login/', views.login_view, name='login'),
+    path('login-demo-user/', views.login_demo_user, name='login_demo_user'),
     path('logout/', auth_views.LogoutView.as_view(), name='logout'),
     path('password-reset/', auth_views.PasswordResetView.as_view(
         template_name="registration/password_reset.html"),
@@ -35,8 +36,8 @@ urlpatterns = [
          name='awaiting_activation'),
     path('activate/<uidb64>/<token>/', views.activate, name='activate'),
     # higher user views
-    path('instructor/create-a-class/',
-         views.instrutor_create_class, name='create_class'),
+    path('instructor/create-a-course/',
+         views.instrutor_create_course, name='create_course'),
     path('create-a-class/awaiting-approval/',
          views.class_created_pending, name='await_approval'),
     path('courses/instructor/module/', views.create_module, name='create_module'),

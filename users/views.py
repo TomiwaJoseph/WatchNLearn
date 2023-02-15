@@ -4,16 +4,17 @@ from .forms import SignupForm, UserUpdateForm, InstructorUpdateForm, CreateClass
 from django.contrib.auth import authenticate, login, logout
 from django.contrib.auth.decorators import login_required
 from .models import Instructor, CustomUser, BookmarkList
-# from django.utils.encoding import force_bytes, force_text
-# from django.utils.http import urlsafe_base64_encode, urlsafe_base64_decode, is_safe_url
+from django.utils.encoding import force_bytes, force_str
+from django.utils.http import urlsafe_base64_encode, urlsafe_base64_decode, url_has_allowed_host_and_scheme
 from .tokens import account_activation_token
 from django.core.mail import EmailMessage
 from django.http import HttpResponse, HttpResponseRedirect
 from django.urls import reverse
-from main.models import LandingPagePictures, InstructorPagePictures
+from main.models import InstructorPagePictures
 from courses.models import Course, Module
 from django.contrib.auth.decorators import permission_required
 from random import randint
+from django.contrib.sites.shortcuts import get_current_site
 
 # Ajax Requests
 
@@ -51,6 +52,21 @@ def login_view(request):
         return redirect('signup_login')
 
 
+def login_demo_user(request):
+    user = CustomUser.objects.get(email='demouser@gmail.com')
+    next_url = request.GET.get('next_path', None)
+    login(request, user)
+    if next_url is None:
+        return redirect('dashboard')
+    elif not url_has_allowed_host_and_scheme(
+            url=next_url,
+            allowed_hosts={request.get_host()},
+            require_https=request.is_secure()):
+        return redirect('/')
+    else:
+        return redirect('cart')
+
+
 def sign_in_or_register(request):
     next_url = request.GET.get('next')
     request.session['next_url'] = next_url
@@ -63,7 +79,7 @@ def sign_in_or_register(request):
             user.is_active = False
             user.save()
 
-            current_site = f'{self.request.scheme}://{self.request.get_host()}'
+            current_site = get_current_site(request).domain
             link = reverse('activate', kwargs={
                 'uidb64': urlsafe_base64_encode(force_bytes(user.pk)),
                 'token': account_activation_token.make_token(user)
@@ -83,7 +99,7 @@ def sign_in_or_register(request):
 
 def activate(request, uidb64, token):
     try:
-        uid = force_text(urlsafe_base64_decode(uidb64))
+        uid = force_str(urlsafe_base64_decode(uidb64))
         user = CustomUser.objects.get(pk=uid)
     except (TypeError, ValueError, OverflowError, CustomUser.DoesNotExist):
         user = None
@@ -171,7 +187,7 @@ def instructor(request):
 
 
 @login_required
-def instrutor_create_class(request):
+def instrutor_create_course(request):
     if request.method == "POST":
         class_create_form = CreateClassForm(request.POST, request.FILES)
         if class_create_form.is_valid():
@@ -184,7 +200,7 @@ def instrutor_create_class(request):
             return redirect('await_approval')
     else:
         class_create_form = CreateClassForm()
-    return render(request, "users/create_class.html", {"class_create_form": class_create_form})
+    return render(request, "users/create_course.html", {"class_create_form": class_create_form})
 
 
 @login_required

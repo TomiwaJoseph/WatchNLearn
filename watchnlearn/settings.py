@@ -59,8 +59,11 @@ TEMPLATES = [
                 'django.template.context_processors.request',
                 'django.contrib.auth.context_processors.auth',
                 'django.contrib.messages.context_processors.messages',
-                # 'courses.context_processors.get_categories',
+                'courses.context_processors.get_categories',
             ],
+            # If you want your templates tags/filters to be global and useable
+            # without loading them in templates
+            # 'builtins': ['courses.templatetags.courses_tags'],
         },
     },
 ]
@@ -143,14 +146,15 @@ CKEDITOR_CONFIGS = {
             ['NumberedList', 'BulletedList'],
             ['TextColor', 'BGColor'],
             ['Undo', 'Redo'],
-        ]
+        ],
+        'width': 'auto',
     }
 }
 
 # This is for receiving the email in the terminal/console
-# EMAIL_BACKEND = 'django.core.mail.backends.console.EmailBackend'
+EMAIL_BACKEND = 'django.core.mail.backends.console.EmailBackend'
 
-EMAIL_BACKEND = 'django.core.mail.backends.smtp.EmailBackend'
+# EMAIL_BACKEND = 'django.core.mail.backends.smtp.EmailBackend'
 EMAIL_HOST = 'smtp.gmail.com'
 EMAIL_HOST_USER = config("EMAIL_HOST_USER")
 EMAIL_HOST_PASSWORD = config("EMAIL_HOST_PASSWORD")

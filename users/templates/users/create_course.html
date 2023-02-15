@@ -5,16 +5,16 @@
 
 {% block content %}
 
-<h1><span class="category_filter_title">Create Class</span></h1>
+<h1><span class="category_filter_title">Create Course</span></h1>
 <hr class="mb-4">
 
 <div class="content-section">
-    <form action="{% url 'create_class' %}" method="POST" enctype="multipart/form-data">
+    <form action="{% url 'create_course' %}" method="POST" enctype="multipart/form-data">
         {% csrf_token %}
         {{ class_create_form.media }}
         {{ class_create_form|crispy }}
         <div class="form-group">
-            <button class="btn btn-outline-info create_class_btn w-100 mt-2" type="submit">Create Class</button>
+            <button class="btn btn-outline-info create_class_btn w-100 mt-2" type="submit">Create Course</button>
         </div>
     </form>
 </div>
