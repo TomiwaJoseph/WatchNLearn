@@ -178,9 +178,9 @@ def profile_edit(request):
 
 
 def instructor(request):
-    all_landingpages_pictures = InstructorPagePictures.objects.all()
+    all_instructorpages_pictures = InstructorPagePictures.objects.all()
     sys_random = SystemRandom()
-    random_picture = sys_random.choice(all_landingpages_pictures)
+    random_picture = sys_random.choice(all_instructorpages_pictures)
     context = {
         "instructor_picture": random_picture,
     }

@@ -149,7 +149,15 @@
   </div>
 </div>
 <hr>
-<div class="row related_keywords">
+<div class="all_related">
+  <div class="keywords">
+    {% for tag in object.keywords.all %}
+          <a href="{% url 'tag_search' tag.slug %}" class="mt-1 mr-3 descriptions">{{ tag }}</a>
+      {% endfor %}
+  </div>
+</div>
+
+{% comment %} <div class="row related_keywords">
   <div class="col-12">
     <div class="row d-flex justify-content-between">
       {% for tag in object.keywords.all %}
@@ -159,16 +167,7 @@
       {% endfor %}
     </div>
   </div>
-</div>
-{% comment %}
-<div class="row bg-warning">
-  {% for tag in object.keywords.all %}
-  <div class="col-md-3 col-sm-4 col-xm-6">
-    <a href="{% url 'tag_search' tag.slug %}" class="mt-3 mr-3 descriptions">{{ tag }}</a>
-  </div>
-  {% endfor %}
-</div>
-{% endcomment %}
+</div> {% endcomment %}
 
 {% if course_student %}
   <hr>

@@ -5,9 +5,9 @@
 {% block content %}
 
 <h1>Courses with tags
-    {% for word in search_input %}
-    <span class="category_filter_title">"{{ word }}"</span>
-    {% endfor %}
+    {% comment %} {% for word in search_input %} {% endcomment %}
+    <span class="category_filter_title">"{{ search_input }}"</span>
+    {% comment %} {% endfor %} {% endcomment %}
 </h1>
 <hr class="mb-4">
 

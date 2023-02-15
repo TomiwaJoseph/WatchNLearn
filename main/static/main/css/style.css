@@ -433,12 +433,12 @@ nav.navbar form {
   display: inline-block;
   background: #533681;
   padding: 2px 8px;
-  line-height: 1.5;
+  /* line-height: 1.5; */
   font-size: 12px;
   border-radius: 4px;
   text-transform: uppercase;
   color: #fff !important;
-  margin-right: 10px;
+  /* margin-right: 10px; */
   letter-spacing: 0.2em;
   text-decoration: none;
 }
@@ -677,6 +677,7 @@ video {
 }
 .pending_msg p {
   font-size: 16px;
+  margin-bottom: 0;
 }
 
 /* <--------- Register and Login Forms ----------> */

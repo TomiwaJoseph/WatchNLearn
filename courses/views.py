@@ -15,6 +15,8 @@ from django.core.mail import send_mail
 from django.contrib.auth.mixins import LoginRequiredMixin
 from users.models import Profile, CustomUser, BookmarkList
 
+stripe.api_key = settings.STRIPE_SECRET_KEY
+
 # ajax request starts
 
 
@@ -40,7 +42,6 @@ def bookmark_it(request):
 
 
 # ajax request ends
-stripe.api_key = settings.STRIPE_SECRET_KEY
 
 
 class CourseListView(ListView):
@@ -60,7 +61,7 @@ class CourseDetailView(DetailView):
         all_modules = object_in_detail.course_modules.all()
         all_course_students = object_in_detail.students.all()
         all_reviews = object_in_detail.course_review.all()
-        if self.request.user in all_course_students or object_in_detail.discount_price == 0:
+        if self.request.user.is_superuser or self.request.user in all_course_students or object_in_detail.price == 0:
             context['course_student'] = True
         context['review_form'] = ReviewForm
         context['all_reviews'] = all_reviews
@@ -95,7 +96,7 @@ def get_category_courses(request, category):
 def view_content(request, obj, module_slug, content_id):
     course = Module.objects.get(
         course__slug=obj, module_title_slug=module_slug).course
-    if course in request.user.profile.courses_bought.all() or course.discount_price == 0:
+    if request.user.is_superuser or course in request.user.profile.courses_bought.all() or course.price == 0:
         content = Content.objects.get(id=content_id)
     else:
         messages.info(
@@ -125,7 +126,7 @@ def save_review(request):
 
 
 def free_course(request):
-    query = Course.objects.filter(discount_price=0, status="published")
+    query = Course.objects.filter(price=0, status="published")
     context = {
         "free_courses": query,
     }

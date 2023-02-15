@@ -39,7 +39,6 @@ class Course(models.Model):
     title = models.CharField(max_length=200, unique=True)
     slug = models.SlugField(max_length=200, unique=True)
     thumbnail_image = models.ImageField(upload_to="course_thumbnails")
-    discount_price = models.IntegerField()
     price = models.IntegerField()
     about_the_course = RichTextField()
     date_created = models.DateTimeField(auto_now_add=True)

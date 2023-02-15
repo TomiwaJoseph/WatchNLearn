@@ -1,7 +1,6 @@
 from django.urls import path
 from . import views
 
-
 urlpatterns = [
     # things ajax request
     path('bookmark-it/', views.bookmark_it, name='bookmark_it'),
