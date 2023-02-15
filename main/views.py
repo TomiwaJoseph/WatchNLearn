@@ -84,28 +84,40 @@ def search_course(request):
 
 
 def tag_search(request, tag):
-    output = []
-    all_words_in_search_input = tag.split("-")
-    search_results = []
+    # output = []
+    # all_words_in_search_input = tag.split("-")
+    # search_results = []
+    # print()
+    # print(tag)
+    # # print()
 
-    def removeNestings(array):
-        for item in array:
-            if type(item) == list:
-                removeNestings(item)
-            else:
-                output.append(item)
+    # def removeNestings(array):
+    #     for item in array:
+    #         if type(item) == list:
+    #             removeNestings(item)
+    #         else:
+    #             output.append(item)
 
-    for word in all_words_in_search_input:
-        query = list(Course.objects.filter(
-            Q(title__contains=word) |
-            Q(keywords__name__icontains=word)
-        ).distinct())
-        search_results.append(query)
+    query = list(Course.objects.filter(
+        status='published',
+        keywords__name__icontains=tag
+    ).distinct())
+    # print(query)
+    # print()
 
-    removeNestings(search_results)
+    # for word in all_words_in_search_input:
+    #     query = list(Course.objects.filter(
+    #         Q(status__contains="Published") &
+    #         Q(title__contains=tag) |
+    #         Q(keywords__name__icontains=tag)
+    #     ).distinct())
+    #     search_results.append(query)
+
+    #     removeNestings(search_results)
 
     context = {
-        'search_input': all_words_in_search_input,
-        'search_results': list(set(output)),
+        'search_input': tag,
+        'search_results': query,
     }
+
     return render(request, 'main/tag_search.html', context)
