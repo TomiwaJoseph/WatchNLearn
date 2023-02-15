@@ -13,7 +13,7 @@ from django.urls import reverse
 from main.models import InstructorPagePictures
 from courses.models import Course, Module
 from django.contrib.auth.decorators import permission_required
-from random import randint
+from random import SystemRandom
 from django.contrib.sites.shortcuts import get_current_site
 
 # Ajax Requests
@@ -178,8 +178,9 @@ def profile_edit(request):
 
 
 def instructor(request):
-    random_pick = randint(0, InstructorPagePictures.objects.count() - 1)
-    random_picture = InstructorPagePictures.objects.all()[random_pick]
+    all_landingpages_pictures = InstructorPagePictures.objects.all()
+    sys_random = SystemRandom()
+    random_picture = sys_random.choice(all_landingpages_pictures)
     context = {
         "instructor_picture": random_picture,
     }
