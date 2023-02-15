@@ -10,12 +10,12 @@
     <link rel="stylesheet" type="text/css" href="{% static 'main/css/style.css' %}">
     <link rel="stylesheet" type="text/css" href="{% static 'main/css/responsive.css' %}">
     <link rel="stylesheet" type="text/css" href="{% static 'main/fontawesome-free/css/all.min.css' %}">
-    {% comment %} <style>
+    <style>
         @import url('https://fonts.googleapis.com/css?family=Dosis&display=swap');
         @import url('https://fonts.googleapis.com/css?family=Red+Rose&display=swap');
         @import url('https://fonts.googleapis.com/css?family=Verdana&display=swap');
         @import url('https://fonts.googleapis.com/css?family=Montserrat&display=swap');
-    </style> {% endcomment %}
+    </style>
     <title>{% block title %} WatchnLearn {% endblock %}</title>
     {% block extra_head %} {% endblock extra_head %}
 </head>
@@ -29,7 +29,6 @@
             </ul>
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#show-menu"
                 aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                <!-- <span class="navbar-toggler-icon"></span> -->
                 <i class="fas fa-bars"></i>
             </button>
 
@@ -68,11 +67,11 @@
                                 aria-haspopup="true" aria-expanded="false">
                                 <i class="fa fa-user"></i>
                             </a>
-                            <div class="auth_opt text-center">
+                            <div class="auth_opt text-center auth_opt-instructor">
                                 {% if request.user.is_instructor and not request.user.is_superuser %}
                                     <a class="nav-link" href="{% url 'profile' request.user.first_name request.user.user_instructor.first.id %}">Profile</a>
                                     <a class="nav-link" href="{% url 'instructor_drafts' %}">My Drafts</a>
-                                    <a class="nav-link" href="{% url 'create_class' %}">Create Class</a>
+                                    <a class="nav-link" href="{% url 'create_course' %}">Create Class</a>
                                     <a class="nav-link" href="{% url 'create_module' %}">Create Module</a>
                                     <a class="nav-link" href="{% url 'create_content' %}">Add Content</a>
                                     <a class="nav-link" href="{% url 'my_learning' %}">My Courses</a>
@@ -88,9 +87,9 @@
                             </div>
                         </li>
                     {% else %}
-                    <li class="nav-item">
-                        <a class="nav-link" href="{% url 'signup_login' %}">Login</a>
-                    </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="{% url 'signup_login' %}">Login</a>
+                        </li>
                     {% endif %}
                 </ul>
             </div>

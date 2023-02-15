@@ -29,7 +29,7 @@
                     <div class="form-group">
                         <textarea required name="message" placeholder="Message" rows="8" class="form-control"></textarea>
                     </div>
-                    <button type="submit" class="btn btn-outline-info log my-3 text-uppercase">Send message</button>
+                    <button id="contact-submit-button" type="submit" class="btn btn-outline-info log my-3 text-uppercase">Send message</button>
                 </form>
             </div>
         </div>
@@ -65,4 +65,14 @@
 
 {% include "main/features.html" %}
 
+{% endblock %}
+
+{% block script %}
+    <script>
+        function disableButton() {
+            var btn = document.getElementById('contact-submit-button')
+            btn.disabled = true;
+            btn.innerText = 'Sending...'
+        }
+    </script>
 {% endblock %}

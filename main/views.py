@@ -1,7 +1,7 @@
 from django.shortcuts import render, redirect
 from .models import Newsletter, LandingPagePictures
 from django.http import HttpResponse
-from random import randint
+from random import SystemRandom
 from courses.models import Course
 from django.db.models import Q
 from django.contrib import messages
@@ -24,8 +24,9 @@ def newsletter(request):
 
 
 def index(request):
-    random_pick = randint(0, LandingPagePictures.objects.count() - 1)
-    random_picture = LandingPagePictures.objects.all()[random_pick]
+    all_landingpages_pictures = LandingPagePictures.objects.all()
+    sys_random = SystemRandom()
+    random_picture = sys_random.choice(all_landingpages_pictures)
     context = {
         'random_picture': random_picture,
     }
@@ -41,11 +42,15 @@ def contact(request):
 
         intro_and_message = f"Hi, {name} here.\n" + message
 
-        send_mail(subject, intro_and_message, email,
-                  [settings.EMAIL_HOST_USER], fail_silently=False)
+        try:
+            send_mail(subject, intro_and_message, email,
+                      [settings.EMAIL_HOST_USER], fail_silently=False)
+            messages.success(request, 'Message sent successfully')
+        except Exception as e:
+            messages.error(request, 'Message not sent. Try again.')
 
-        messages.success(request, 'Message sent successfully')
         return redirect('contact')
+
     return render(request, 'main/contact.html')
 
 

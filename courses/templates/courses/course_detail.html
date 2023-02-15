@@ -218,3 +218,29 @@
 {% include "main/features.html" %}
 
 {% endblock %}
+
+
+{% block script %}
+
+<script>
+  goToTopBtn = document.getElementById('goTop');
+  var rootElement = document.documentElement
+
+  function handleScroll() {
+      var scrollTotal = rootElement.scrollHeight - rootElement.clientHeight
+      if ((rootElement.scrollTop / scrollTotal) > 0.10) {
+          goToTopBtn.style.display = "block";
+      } else {
+          goToTopBtn.style.display = "none";
+      }
+  }
+  document.addEventListener("scroll", handleScroll)
+
+  $('#goTop').click(function () {
+      $('html, body').animate({
+          scrollTop: 0
+      }, 1000);
+  });
+</script>
+
+{% endblock %}

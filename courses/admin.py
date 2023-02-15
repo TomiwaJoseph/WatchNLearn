@@ -28,9 +28,13 @@ class CategoryAdmin(admin.ModelAdmin):
 
 @admin.register(Course)
 class CourseAdmin(admin.ModelAdmin):
-    list_display = ['title', 'instructor', 'category', 'status']
+    list_display = ['title', "picture_path",
+                    'instructor', 'category', 'status']
     exclude = ['slug',]
     list_editable = ['status']
+
+    def picture_path(self, obj):
+        return obj.thumbnail_image
 
 
 @admin.register(Module)
