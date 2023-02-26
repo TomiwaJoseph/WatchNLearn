@@ -51,7 +51,7 @@ class Course(models.Model):
         ordering = ['date_created']
 
     def get_stripe_price(self):
-        return int(self.discount_price) * 100
+        return int(self.price) * 100
 
     def __str__(self):
         return self.title

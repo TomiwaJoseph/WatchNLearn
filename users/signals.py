@@ -9,5 +9,5 @@ def create_profile(sender, instance, created, **kwargs):
     if created:
         Profile.objects.create(user=instance)
 
-post_save.connect(create_profile, sender=settings.AUTH_USER_MODEL)
 
+post_save.connect(create_profile, sender=settings.AUTH_USER_MODEL)

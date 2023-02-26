@@ -3,12 +3,10 @@ from django.contrib.auth.models import BaseUserManager, AbstractUser
 from django.conf import settings
 from taggit.managers import TaggableManager
 from ckeditor.fields import RichTextField
-from PIL import Image, ImageTk
+from PIL import Image
 from io import BytesIO
 from django.core.files.uploadedfile import InMemoryUploadedFile
 import sys
-import cv2
-import numpy
 from courses.models import Course
 from resizeimage import resizeimage
 
