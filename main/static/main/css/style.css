@@ -8,6 +8,11 @@ a,
 a:hover {
   color: #3a3a3a;
 }
+.btn:focus {
+  /* outline: none !important;
+  border: none !important; */
+  box-shadow: none;
+}
 
 /* <--------- Base --------> */
 .alert-error {
@@ -232,10 +237,6 @@ nav.navbar form {
   background-color: #533681;
   min-width: 120px;
   z-index: 1;
-}
-.auth_opt-instructor {
-  right: 0;
-  left: auto;
 }
 .auth_opt a {
   padding: 8px 5px;
