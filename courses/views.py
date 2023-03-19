@@ -169,6 +169,7 @@ class CreateCheckoutSessionView(View):
                         'product_data': {
                             'name': course.title,
                             # 'images': [course.thumbnail_image.path]
+                            'images': [domain_url + '/media/' + str(course.thumbnail_image)]
                         },
                     },
                     'quantity': 1,
