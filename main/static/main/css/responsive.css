@@ -3,6 +3,26 @@
     width: 100% !important;
     margin-bottom: 10px;
   }
+  .top-container .course-info-container h2 {
+    font-size: 24px;
+  }
+}
+
+@media (max-width: 768px) {
+  #contact_form {
+    padding: 3px !important;
+  }
+}
+
+@media (max-width: 767px) {
+  .top-container .image-container,
+  .top-container .course-info-container {
+    width: 100%;
+  }
+  .top-container .course-info-container h2 {
+    font-size: 1.8rem;
+    margin-top: 10px;
+  }
 }
 
 @media (max-width: 768px) and (min-width: 480px) {
@@ -20,15 +40,6 @@
   }
 }
 
-/* @media (max-width: 760px) {
-    .img_container p{
-        font-size: 20px;
-    } 
-    .img_container h1{
-        font-size: 30px;
-    }
-} */
-
 @media (max-width: 500px) {
   .img_container p {
     font-size: 18px;
@@ -38,14 +49,6 @@
   }
 }
 
-@media (max-width: 768px) {
-  #contact_form {
-    padding: 3px !important;
-  }
-  #contct_addr p {
-    text-align: left !important;
-  }
-}
 @media (max-width: 480px) {
   #nav_col {
     font-size: 32px !important;
@@ -66,16 +69,24 @@
     font-size: 32px;
     margin-top: -25px !important;
   }
-  /* .pay_now_img,
-  .course_image {
-    width: 100% !important;
-  } */
+  .top-container .course-info-container h2 {
+    font-size: 1.5rem;
+  }
   .related_keywords a {
     width: 100%;
     text-align: center;
   }
   .confirm-buy-container h2 {
     font-size: 1.5rem;
+  }
+}
+
+@media (max-width: 344px) {
+  .img_container p {
+    font-size: 14px;
+  }
+  .img_container h1 {
+    font-size: 25px;
   }
 }
 
@@ -103,14 +114,5 @@
   }
   #accordion span {
     display: none;
-  }
-}
-
-@media (max-width: 344px) {
-  .img_container p {
-    font-size: 14px;
-  }
-  .img_container h1 {
-    font-size: 25px;
   }
 }
