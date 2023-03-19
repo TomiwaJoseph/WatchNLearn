@@ -57,14 +57,14 @@ def login_demo_user(request):
     next_url = request.GET.get('next_path', None)
     login(request, user)
     if next_url is None:
-        return redirect('dashboard')
+        return redirect('my_learning')
     elif not url_has_allowed_host_and_scheme(
             url=next_url,
             allowed_hosts={request.get_host()},
             require_https=request.is_secure()):
         return redirect('/')
     else:
-        return redirect('cart')
+        return redirect(next_url)
 
 
 def sign_in_or_register(request):
