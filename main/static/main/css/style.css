@@ -9,8 +9,6 @@ a:hover {
   color: #3a3a3a;
 }
 .btn:focus {
-  /* outline: none !important;
-  border: none !important; */
   box-shadow: none;
 }
 
@@ -188,10 +186,6 @@ a:hover {
   cursor: pointer;
 }
 
-/* Colors to use
-#581845 darkpurple for background
-#ffc300 yellowish accents
-#ff5733 reddish main color */
 .navbar-nav > .active > a {
   color: #ffc300 !important;
 }
@@ -430,16 +424,32 @@ nav.navbar form {
 }
 
 /* Course Detail */
+
+.top-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+.top-container .image-container {
+  width: 40%;
+}
+.image-container img {
+  width: 100%;
+  object-fit: contain;
+}
+.top-container .course-info-container {
+  margin: auto 0;
+  width: 55%;
+}
+
 .descriptions {
   display: inline-block;
   background: #533681;
   padding: 2px 8px;
-  /* line-height: 1.5; */
   font-size: 12px;
   border-radius: 4px;
   text-transform: uppercase;
   color: #fff !important;
-  /* margin-right: 10px; */
   letter-spacing: 0.2em;
   text-decoration: none;
 }
@@ -587,10 +597,7 @@ video {
 }
 
 /* Instructor Landing Page */
-/* .img_container{
-    position: relative;
-    text-align: center;
-}*/
+
 .img_container p {
   font-size: 32px;
 }
@@ -763,7 +770,6 @@ video {
 /* <--------- Contact ----------> */
 
 #contct_addr .mb-4 {
-  text-align: justify;
   color: #3a3a3a;
 }
 .addresses .fa {
