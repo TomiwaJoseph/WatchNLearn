@@ -158,6 +158,9 @@ class CreateCheckoutSessionView(View):
         course_to_buy = int(request.session['course_to_buy'])
         course = Course.objects.get(id=course_to_buy)
         domain_url = f'{self.request.scheme}://{self.request.get_host()}'
+        print()
+        print(domain_url)
+        print()
 
         checkout_session = stripe.checkout.Session.create(
             payment_method_types=['card'],
@@ -168,7 +171,7 @@ class CreateCheckoutSessionView(View):
                         'unit_amount': course.get_stripe_price(),
                         'product_data': {
                             'name': course.title,
-                            'images': [course.thumbnail_image.path] if self.request.scheme == 'https' else [None]
+                            'images': [course.thumbnail_image.path]
                         },
                     },
                     'quantity': 1,
@@ -179,8 +182,8 @@ class CreateCheckoutSessionView(View):
                 "current_user_email": self.request.user.email,
             },
             mode='payment',
-            success_url=domain_url + '/course/purchase/success/',
-            cancel_url=domain_url + '/course/purchase/cancel/',
+            success_url="https://watchnlearn.onrender.com/course/purchase/success/",
+            cancel_url="https://watchnlearn.onrender.com/course/purchase/cancel/",
         )
         return JsonResponse({
             'id': checkout_session.id
