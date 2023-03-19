@@ -18,6 +18,7 @@ Pillow==9.4.0
 psycopg2-binary==2.9.5
 pycodestyle==2.10.0
 pyee==9.0.4
+pyscopg2==66.0.2
 python-decouple==3.7
 python-resize-image==1.1.20
 requests==2.28.2
