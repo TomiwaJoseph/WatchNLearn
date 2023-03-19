@@ -5,35 +5,37 @@
 {% block content %}
 
 {% if my_drafts %}
-    <div class="row">
-        {% for course in my_drafts %}
-        <div class="col-md-4 mb-5">
-            <div class="card courses_card">
+<div class="row">
+    {% for course in my_drafts %}
+    <div class="col-md-4 mb-5">
+        <div class="card courses_card">
+            <a href="{% url 'course_detail' course.slug %}">
                 <img src="{{ course.thumbnail_image.url }}" alt="{{ course.title }}" class="card-img-top img-fluid">
-                <div class="card-body">
-                    <div class="row mt-2">
-                        <div class="col d-flex justify-content-between little_course_info">
-                            <p>{{ course.students.all|length }} student{{ course.students.all|length|pluralize:",s" }}</p>
-                            <p>{{ course|get_course_duration }}</p>
-                        </div>
+            </a>
+            <div class="card-body">
+                <div class="row mt-2">
+                    <div class="col d-flex justify-content-between little_course_info">
+                        <p>{{ course.students.all|length }} student{{ course.students.all|length|pluralize:",s" }}</p>
+                        <p>{{ course|get_course_duration }}</p>
                     </div>
-                    <a href="{% url 'course_detail' course.slug %}">{{ course.title }}</a>
-                    <div class="row mt-2 course_details">
-                        <div class="col d-flex justify-content-between">
-                            <p>{{ course.instructor }}</p>
-                        </div>
+                </div>
+                <a href="{% url 'course_detail' course.slug %}">{{ course.title }}</a>
+                <div class="row mt-2 course_details">
+                    <div class="col d-flex justify-content-between">
+                        <p>{{ course.instructor }}</p>
                     </div>
                 </div>
             </div>
         </div>
-        {% endfor %}
     </div>
+    {% endfor %}
+</div>
 {% else %}
-    <div class="row">
-        <div class="col-md-12">
-            <h2>You have no pending drafts.</h2>
-        </div>
+<div class="row">
+    <div class="col-md-12">
+        <h2>You have no pending drafts.</h2>
     </div>
+</div>
 {% endif %}
 
 {% endblock %}

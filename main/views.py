@@ -57,7 +57,7 @@ def contact(request):
 def search_course(request):
     output = []
     search_input = request.POST.get('search')
-    all_words_in_search_input = search_input.split()
+    all_words_in_search_input = search_input.split(" ")
     search_results = []
 
     def removeNestings(array):
@@ -84,36 +84,10 @@ def search_course(request):
 
 
 def tag_search(request, tag):
-    # output = []
-    # all_words_in_search_input = tag.split("-")
-    # search_results = []
-    # print()
-    # print(tag)
-    # # print()
-
-    # def removeNestings(array):
-    #     for item in array:
-    #         if type(item) == list:
-    #             removeNestings(item)
-    #         else:
-    #             output.append(item)
-
     query = list(Course.objects.filter(
         status='published',
         keywords__name__icontains=tag
     ).distinct())
-    # print(query)
-    # print()
-
-    # for word in all_words_in_search_input:
-    #     query = list(Course.objects.filter(
-    #         Q(status__contains="Published") &
-    #         Q(title__contains=tag) |
-    #         Q(keywords__name__icontains=tag)
-    #     ).distinct())
-    #     search_results.append(query)
-
-    #     removeNestings(search_results)
 
     context = {
         'search_input': tag,

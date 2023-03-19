@@ -12,7 +12,9 @@
     {% for course in free_courses %}
     <div class="col-md-4 mb-5">
         <div class="card courses_card">
-            <img src="{{ course.thumbnail_image.url }}" alt="{{ course.title }}" class="card-img-top img-fluid">
+            <a href="{% url 'course_detail' course.slug %}">
+                <img src="{{ course.thumbnail_image.url }}" alt="{{ course.title }}" class="card-img-top img-fluid">
+            </a>
             <div class="card-body">
                 <div class="row mt-2">
                     <div class="col d-flex justify-content-between little_course_info">
@@ -25,7 +27,8 @@
                     <div class="col d-flex justify-content-between">
                         <p>{{ course.instructor }}</p>
                         <div>
-                            <a><i class="fa fa-bookmark bookmark_btn {% if course in user.user_bookmarks.folder.all %}active{% endif %}" data-id="{{ course.id }}"></i></a>
+                            <a><i class="fa fa-bookmark bookmark_btn {% if course in user.user_bookmarks.folder.all %}active{% endif %}"
+                                    data-id="{{ course.id }}"></i></a>
                         </div>
                     </div>
                 </div>

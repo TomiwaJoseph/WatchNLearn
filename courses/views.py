@@ -11,6 +11,7 @@ from django.contrib import messages
 from .forms import ReviewForm
 from django.views.decorators.csrf import csrf_exempt
 import stripe
+import json
 from django.core.mail import send_mail
 from django.contrib.auth.mixins import LoginRequiredMixin
 from users.models import Profile, CustomUser, BookmarkList
@@ -170,8 +171,7 @@ class CreateCheckoutSessionView(View):
                         'unit_amount': course.get_stripe_price(),
                         'product_data': {
                             'name': course.title,
-                            # 'images': [course.thumbnail_image.path],
-                            # 'images': ['https://images.unsplash.com/photo-1677131001999-aa1291476c37?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=871&q=80']
+                            'images': [course.thumbnail_image.path] if self.request.scheme == 'https' else [None]
                         },
                     },
                     'quantity': 1,
@@ -193,44 +193,29 @@ class CreateCheckoutSessionView(View):
 @csrf_exempt
 def stripe_webhook(request):
     payload = request.body
-    print(payload)
-    sig_header = request.META['HTTP_STRIPE_SIGNATURE']
-    print()
-    print(sig_header)
-    print()
     event = None
 
     try:
-        print('loggin in...')
-        event = stripe.Webhook.construct_event(
-            payload, sig_header, settings.STRIPE_WEBHOOK_SECRET
+        event = stripe.Event.construct_from(
+            json.loads(payload), settings.STRIPE_WEBHOOK_SECRET
         )
-        print('successful login...')
     except ValueError as e:
         # Invalid payload
-        print('valueerror occured...')
-        return HttpResponse(status=400)
-    except stripe.error.SignatureVerificationError as e:
-        # Invalid signature
-        print('signature verification occured...')
         return HttpResponse(status=400)
 
     # Handle the checkout.session.completed event
     if event['type'] == 'checkout.session.completed':
-        print()
-        print('successful pay')
-        print()
         session = event['data']['object']
 
         customer_email = session["customer_details"]["email"]
         course_id = session["metadata"]["course_id"]
-        # email = session["metadata"]["current_user_email"]
+        email = session["metadata"]["current_user_email"]
 
         course = Course.objects.get(id=course_id)
-        # user = Profile.objects.get(user__email=email)
+        user = Profile.objects.get(user__email=email)
 
-        # course.students.add(user.user)
-        # user.courses_bought.add(course)
+        course.students.add(user.user)
+        user.courses_bought.add(course)
 
         send_mail(
             subject="Here is your course",
