@@ -1,7 +1,7 @@
 from django.shortcuts import render, redirect
 from django.contrib import messages
 from .forms import SignupForm, UserUpdateForm, InstructorUpdateForm, CreateClassForm, CreateModuleForm, CreateContentForm
-from django.contrib.auth import authenticate, login, logout
+from django.contrib.auth import authenticate, login
 from django.contrib.auth.decorators import login_required
 from .models import Instructor, CustomUser, BookmarkList
 from django.utils.encoding import force_bytes, force_str

@@ -1,20 +1,17 @@
 from django.shortcuts import render, redirect
-from django.views.generic import DetailView, ListView, TemplateView, View
+from django.views.generic import DetailView, ListView, View
 from .models import Course, Category, Module, Content
 from django.core.paginator import Paginator, EmptyPage, PageNotAnInteger
-from django.utils.text import slugify
 from django.conf import settings
 from django.http.response import JsonResponse, HttpResponse
 from django.contrib.auth.decorators import login_required
-from django.contrib.sites.shortcuts import get_current_site
 from django.contrib import messages
 from .forms import ReviewForm
 from django.views.decorators.csrf import csrf_exempt
 import stripe
 import json
 from django.core.mail import send_mail
-from django.contrib.auth.mixins import LoginRequiredMixin
-from users.models import Profile, CustomUser, BookmarkList
+from users.models import Profile, BookmarkList
 
 stripe.api_key = settings.STRIPE_SECRET_KEY
 

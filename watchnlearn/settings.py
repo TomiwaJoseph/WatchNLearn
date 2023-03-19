@@ -7,10 +7,10 @@ from pathlib import Path
 BASE_DIR = Path(__file__).resolve().parent.parent
 
 # SECURITY WARNING: keep the secret key used in production secret!
-SECRET_KEY = 'django-insecure-8r1%s8yo2v%e_o)*)$^+%y*-5@^t__b4napik%v3c!e8w9!pjw'
+SECRET_KEY = config("SECRET_KEY")
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = config('SECRET_KEY')
+DEBUG = config('DEBUG', cast=bool)
 
 ALLOWED_HOSTS = []
 AUTH_USER_MODEL = "users.CustomUser"
@@ -75,17 +75,17 @@ WSGI_APPLICATION = 'watchnlearn.wsgi.application'
 # https://docs.djangoproject.com/en/4.1/ref/settings/#databases
 
 # Sqlite Database
-DATABASES = {
-    'default': {
-        'ENGINE': 'django.db.backends.sqlite3',
-        'NAME': BASE_DIR / 'db.sqlite3',
-    }
-}
+# DATABASES = {
+#     'default': {
+#         'ENGINE': 'django.db.backends.sqlite3',
+#         'NAME': BASE_DIR / 'db.sqlite3',
+#     }
+# }
 
 # Postgresql Database
-# DATABASES = {
-#     "default": dj_database_url.parse(config('DATABASE_URL'))
-# }
+DATABASES = {
+    "default": dj_database_url.parse(config('DATABASE_URL'))
+}
 
 # Password validation
 # https://docs.djangoproject.com/en/4.1/ref/settings/#auth-password-validators

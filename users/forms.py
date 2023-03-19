@@ -24,11 +24,11 @@ class SignupForm(UserCreationForm):
     password2 = forms.CharField(widget=forms.PasswordInput(attrs={
         'placeholder': 'Repeat password',
     }))
-    
+
     class Meta:
         model = MyUser
-        fields = ('first_name', 'last_name','email','password1','password2')
-        
+        fields = ('first_name', 'last_name', 'email', 'password1', 'password2')
+
     def clean_email(self):
         email = self.cleaned_data.get('email')
         user_email = MyUser.objects.filter(email=email)
@@ -45,10 +45,11 @@ class UserUpdateForm(forms.ModelForm):
 
 class InstructorUpdateForm(forms.ModelForm):
     profile_picture = forms.ImageField(required=False,
-        widget=forms.FileInput, error_messages={'invalid':('Image files only')})
+                                       widget=forms.FileInput, error_messages={'invalid': ('Image files only')})
+
     class Meta:
         model = Instructor
-        fields = ('profile_picture','about', 'descriptions')
+        fields = ('profile_picture', 'about', 'descriptions')
 
 
 class CreateClassForm(forms.ModelForm):
@@ -61,13 +62,12 @@ class CreateModuleForm(forms.ModelForm):
     class Meta:
         model = Module
         exclude = ('module_title_slug',)
-        
+
 
 class CreateContentForm(forms.ModelForm):
     class Meta:
         model = Content
         fields = ('module', 'title',
-            'content_description', 'content_video',
-            'content_image', 'content_file'
-        )
-        
+                  'content_description', 'content_video',
+                  'content_image', 'content_file'
+                  )
