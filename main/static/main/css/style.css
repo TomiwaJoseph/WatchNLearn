@@ -1,5 +1,5 @@
 body {
-  font-family: "red rose";
+  font-family: "Red Rose", cursive;
   color: #3a3a3a;
   background: #fff;
 }
@@ -27,7 +27,7 @@ a:hover {
   text-align: center;
 }
 #success_tic h2 {
-  font-family: "red rose";
+  font-family: "Red Rose", cursive;
   color: #533681;
   margin-bottom: 10px;
 }
@@ -177,7 +177,7 @@ a:hover {
   z-index: 2000;
 }
 nav.navbar {
-  font-family: "red rose";
+  font-family: "Red Rose", cursive;
 }
 a:hover {
   text-decoration: none;
@@ -256,7 +256,7 @@ nav.navbar form {
   margin-top: 10px;
 }
 .footer-top-box h3 {
-  font-family: "red rose";
+  font-family: "Red Rose", cursive;
   color: #fff;
 }
 .footer-top-box p {
@@ -529,7 +529,7 @@ nav.navbar form {
 .buy_now {
   background: #ff5733;
   color: #fff !important;
-  font-family: "montserrat";
+  font-family: "Montserrat", sans-serif;
   padding: 10px;
 }
 .buy_now:hover,
@@ -572,7 +572,7 @@ button:focus {
 .pay_now {
   background: #ff5733;
   color: #fff !important;
-  font-family: "montserrat";
+  font-family: "Montserrat", sans-serif;
   font-size: 20px;
 }
 .stripe_pay_tag {
@@ -707,7 +707,7 @@ video {
   outline: none;
   border: 1px solid #533681;
   width: 100%;
-  font-family: "montserrat";
+  font-family: "Montserrat", sans-serif;
 }
 .form-control:focus {
   -webkit-box-shadow: 0 3px 10px -2px #533681 !important;
@@ -787,7 +787,7 @@ video {
 
 #search_q h2,
 #search_q h3 {
-  font-family: "dosis";
+  font-family: "Dosis", sans-serif;
 }
 
 .content-section:hover {
@@ -811,6 +811,6 @@ video {
 .check_course {
   background: #533681;
   color: #fff !important;
-  font-family: "montserrat";
+  font-family: "Montserrat", sans-serif;
   font-size: 20px;
 }
