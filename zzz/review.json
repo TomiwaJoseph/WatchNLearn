@@ -1,0 +1,24 @@
+[
+  {
+    "model": "courses.review",
+    "pk": 1,
+    "fields": {
+      "course": 5,
+      "student": 1,
+      "stars": "5",
+      "body": "This course is an eye-opener. I watched all of the lectures and re-watched some because they are fascinating. There is not one negative thing to say about the course. A true masterclass!",
+      "timestamp": "2021-11-11T23:30:44.649Z"
+    }
+  },
+  {
+    "model": "courses.review",
+    "pk": 2,
+    "fields": {
+      "course": 5,
+      "student": 19,
+      "stars": "4",
+      "body": "Amazing course! A comprehensive course to paint landscapes that'll wow.",
+      "timestamp": "2021-11-11T23:34:16.565Z"
+    }
+  }
+]

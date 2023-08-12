@@ -1,0 +1,394 @@
+[
+  {
+    "model": "taggit.tag",
+    "pk": 76,
+    "fields": {
+      "name": "piano",
+      "slug": "piano"
+    }
+  },
+  {
+    "model": "taggit.tag",
+    "pk": 77,
+    "fields": {
+      "name": "creativity",
+      "slug": "creativity"
+    }
+  },
+  {
+    "model": "taggit.tag",
+    "pk": 78,
+    "fields": {
+      "name": "music",
+      "slug": "music"
+    }
+  },
+  {
+    "model": "taggit.tag",
+    "pk": 79,
+    "fields": {
+      "name": "composition",
+      "slug": "composition"
+    }
+  },
+  {
+    "model": "taggit.tag",
+    "pk": 80,
+    "fields": {
+      "name": "jazz",
+      "slug": "jazz"
+    }
+  },
+  {
+    "model": "taggit.tag",
+    "pk": 81,
+    "fields": {
+      "name": "python",
+      "slug": "python"
+    }
+  },
+  {
+    "model": "taggit.tag",
+    "pk": 82,
+    "fields": {
+      "name": "django",
+      "slug": "django"
+    }
+  },
+  {
+    "model": "taggit.tag",
+    "pk": 83,
+    "fields": {
+      "name": "web-framework",
+      "slug": "web-framework"
+    }
+  },
+  {
+    "model": "taggit.tag",
+    "pk": 84,
+    "fields": {
+      "name": "web-development",
+      "slug": "web-development"
+    }
+  },
+  {
+    "model": "taggit.tag",
+    "pk": 85,
+    "fields": {
+      "name": "photography",
+      "slug": "photography"
+    }
+  },
+  {
+    "model": "taggit.tag",
+    "pk": 86,
+    "fields": {
+      "name": "architechture",
+      "slug": "architechture"
+    }
+  },
+  {
+    "model": "taggit.tag",
+    "pk": 87,
+    "fields": {
+      "name": "photographic composition",
+      "slug": "photographic-composition"
+    }
+  },
+  {
+    "model": "taggit.tag",
+    "pk": 88,
+    "fields": {
+      "name": "backend",
+      "slug": "backend"
+    }
+  },
+  {
+    "model": "taggit.tag",
+    "pk": 89,
+    "fields": {
+      "name": "landscape",
+      "slug": "landscape"
+    }
+  },
+  {
+    "model": "taggit.tag",
+    "pk": 90,
+    "fields": {
+      "name": "painting",
+      "slug": "painting"
+    }
+  },
+  {
+    "model": "taggit.tag",
+    "pk": 91,
+    "fields": {
+      "name": "digital-painting",
+      "slug": "digital-painting"
+    }
+  },
+  {
+    "model": "taggit.tag",
+    "pk": 92,
+    "fields": {
+      "name": "seascape",
+      "slug": "seascape"
+    }
+  },
+  {
+    "model": "taggit.tag",
+    "pk": 93,
+    "fields": {
+      "name": "personal-development",
+      "slug": "personal-development"
+    }
+  },
+  {
+    "model": "taggit.tag",
+    "pk": 94,
+    "fields": {
+      "name": "self-development",
+      "slug": "self-development"
+    }
+  },
+  {
+    "model": "taggit.tag",
+    "pk": 95,
+    "fields": {
+      "name": "business",
+      "slug": "business"
+    }
+  },
+  {
+    "model": "taggit.tag",
+    "pk": 96,
+    "fields": {
+      "name": "marketing",
+      "slug": "marketing"
+    }
+  },
+  {
+    "model": "taggit.tag",
+    "pk": 97,
+    "fields": {
+      "name": "branding",
+      "slug": "branding"
+    }
+  },
+  {
+    "model": "taggit.tag",
+    "pk": 98,
+    "fields": {
+      "name": "self-care",
+      "slug": "self-care"
+    }
+  },
+  {
+    "model": "taggit.tag",
+    "pk": 99,
+    "fields": {
+      "name": "self-esteem",
+      "slug": "self-esteem"
+    }
+  },
+  {
+    "model": "taggit.tag",
+    "pk": 100,
+    "fields": {
+      "name": "react",
+      "slug": "react"
+    }
+  },
+  {
+    "model": "taggit.tag",
+    "pk": 101,
+    "fields": {
+      "name": "front-end",
+      "slug": "front-end"
+    }
+  },
+  {
+    "model": "taggit.tag",
+    "pk": 102,
+    "fields": {
+      "name": "cloud",
+      "slug": "cloud"
+    }
+  },
+  {
+    "model": "taggit.tag",
+    "pk": 103,
+    "fields": {
+      "name": "google",
+      "slug": "google"
+    }
+  },
+  {
+    "model": "taggit.tag",
+    "pk": 104,
+    "fields": {
+      "name": "dev-ops",
+      "slug": "dev-ops"
+    }
+  },
+  {
+    "model": "taggit.tag",
+    "pk": 105,
+    "fields": {
+      "name": "brushwork",
+      "slug": "brushwork"
+    }
+  },
+  {
+    "model": "taggit.tag",
+    "pk": 106,
+    "fields": {
+      "name": "portrait",
+      "slug": "portrait"
+    }
+  },
+  {
+    "model": "taggit.tag",
+    "pk": 107,
+    "fields": {
+      "name": "concept",
+      "slug": "concept"
+    }
+  },
+  {
+    "model": "taggit.tag",
+    "pk": 108,
+    "fields": {
+      "name": "html",
+      "slug": "html"
+    }
+  },
+  {
+    "model": "taggit.tag",
+    "pk": 109,
+    "fields": {
+      "name": "css",
+      "slug": "css"
+    }
+  },
+  {
+    "model": "taggit.tag",
+    "pk": 110,
+    "fields": {
+      "name": "javascript",
+      "slug": "javascript"
+    }
+  },
+  {
+    "model": "taggit.tag",
+    "pk": 111,
+    "fields": {
+      "name": "Illustrator",
+      "slug": "illustrator"
+    }
+  },
+  {
+    "model": "taggit.tag",
+    "pk": 112,
+    "fields": {
+      "name": "Software-Engineer",
+      "slug": "software-engineer"
+    }
+  },
+  {
+    "model": "taggit.tag",
+    "pk": 113,
+    "fields": {
+      "name": "Developer",
+      "slug": "developer"
+    }
+  },
+  {
+    "model": "taggit.tag",
+    "pk": 114,
+    "fields": {
+      "name": "Podcaster",
+      "slug": "podcaster"
+    }
+  },
+  {
+    "model": "taggit.tag",
+    "pk": 115,
+    "fields": {
+      "name": "Marketer",
+      "slug": "marketer"
+    }
+  },
+  {
+    "model": "taggit.tag",
+    "pk": 116,
+    "fields": {
+      "name": "Digital-Artist",
+      "slug": "digital-artist"
+    }
+  },
+  {
+    "model": "taggit.tag",
+    "pk": 117,
+    "fields": {
+      "name": "Youtuber",
+      "slug": "youtuber"
+    }
+  },
+  {
+    "model": "taggit.tag",
+    "pk": 118,
+    "fields": {
+      "name": "Coder",
+      "slug": "coder"
+    }
+  },
+  {
+    "model": "taggit.tag",
+    "pk": 119,
+    "fields": {
+      "name": "Fullstack-Developer",
+      "slug": "fullstack-developer"
+    }
+  },
+  {
+    "model": "taggit.tag",
+    "pk": 120,
+    "fields": {
+      "name": "Author",
+      "slug": "author"
+    }
+  },
+  {
+    "model": "taggit.tag",
+    "pk": 121,
+    "fields": {
+      "name": "Artist",
+      "slug": "artist"
+    }
+  },
+  {
+    "model": "taggit.tag",
+    "pk": 122,
+    "fields": {
+      "name": "Composer",
+      "slug": "composer"
+    }
+  },
+  {
+    "model": "taggit.tag",
+    "pk": 123,
+    "fields": {
+      "name": "Photog",
+      "slug": "photog"
+    }
+  },
+  {
+    "model": "taggit.tag",
+    "pk": 124,
+    "fields": {
+      "name": "Pianist",
+      "slug": "pianist"
+    }
+  }
+]

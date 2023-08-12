@@ -1,0 +1,170 @@
+[
+  {
+    "model": "users.profile",
+    "pk": 1,
+    "fields": {
+      "user": 4,
+      "courses_bought": []
+    }
+  },
+  {
+    "model": "users.profile",
+    "pk": 2,
+    "fields": {
+      "user": 3,
+      "courses_bought": []
+    }
+  },
+  {
+    "model": "users.profile",
+    "pk": 3,
+    "fields": {
+      "user": 2,
+      "courses_bought": [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 22]
+    }
+  },
+  {
+    "model": "users.profile",
+    "pk": 4,
+    "fields": {
+      "user": 1,
+      "courses_bought": [1, 2, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 22]
+    }
+  },
+  {
+    "model": "users.profile",
+    "pk": 5,
+    "fields": {
+      "user": 5,
+      "courses_bought": [1, 13, 14]
+    }
+  },
+  {
+    "model": "users.profile",
+    "pk": 6,
+    "fields": {
+      "user": 6,
+      "courses_bought": []
+    }
+  },
+  {
+    "model": "users.profile",
+    "pk": 7,
+    "fields": {
+      "user": 7,
+      "courses_bought": []
+    }
+  },
+  {
+    "model": "users.profile",
+    "pk": 8,
+    "fields": {
+      "user": 8,
+      "courses_bought": []
+    }
+  },
+  {
+    "model": "users.profile",
+    "pk": 9,
+    "fields": {
+      "user": 9,
+      "courses_bought": []
+    }
+  },
+  {
+    "model": "users.profile",
+    "pk": 10,
+    "fields": {
+      "user": 10,
+      "courses_bought": []
+    }
+  },
+  {
+    "model": "users.profile",
+    "pk": 11,
+    "fields": {
+      "user": 11,
+      "courses_bought": []
+    }
+  },
+  {
+    "model": "users.profile",
+    "pk": 12,
+    "fields": {
+      "user": 12,
+      "courses_bought": []
+    }
+  },
+  {
+    "model": "users.profile",
+    "pk": 13,
+    "fields": {
+      "user": 13,
+      "courses_bought": []
+    }
+  },
+  {
+    "model": "users.profile",
+    "pk": 14,
+    "fields": {
+      "user": 14,
+      "courses_bought": []
+    }
+  },
+  {
+    "model": "users.profile",
+    "pk": 15,
+    "fields": {
+      "user": 15,
+      "courses_bought": []
+    }
+  },
+  {
+    "model": "users.profile",
+    "pk": 16,
+    "fields": {
+      "user": 16,
+      "courses_bought": []
+    }
+  },
+  {
+    "model": "users.profile",
+    "pk": 17,
+    "fields": {
+      "user": 17,
+      "courses_bought": []
+    }
+  },
+  {
+    "model": "users.profile",
+    "pk": 18,
+    "fields": {
+      "user": 18,
+      "courses_bought": []
+    }
+  },
+  {
+    "model": "users.profile",
+    "pk": 19,
+    "fields": {
+      "user": 19,
+      "courses_bought": [5]
+    }
+  },
+  {
+    "model": "users.profile",
+    "pk": 20,
+    "fields": {
+      "user": 20,
+      "courses_bought": [3]
+    }
+  },
+  {
+    "model": "users.profile",
+    "pk": 21,
+    "fields": {
+      "user": 22,
+      "courses_bought": [5, 13]
+    }
+  }
+]

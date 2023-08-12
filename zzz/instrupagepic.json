@@ -1,0 +1,30 @@
+[
+  {
+    "model": "main.instructorpagepictures",
+    "pk": 1,
+    "fields": {
+      "image": "instructor_page_pictures/pexels-rodnae-productions-7092613.jpg"
+    }
+  },
+  {
+    "model": "main.instructorpagepictures",
+    "pk": 2,
+    "fields": {
+      "image": "instructor_page_pictures/pexels-andrea-piacquadio-3769714.jpg"
+    }
+  },
+  {
+    "model": "main.instructorpagepictures",
+    "pk": 3,
+    "fields": {
+      "image": "instructor_page_pictures/pexels-max-fischer-5212320.jpg"
+    }
+  },
+  {
+    "model": "main.instructorpagepictures",
+    "pk": 4,
+    "fields": {
+      "image": "instructor_page_pictures/pexels-andrea-piacquadio-3771074.jpg"
+    }
+  }
+]

@@ -1,0 +1,488 @@
+[
+  {
+    "model": "courses.module",
+    "pk": 1,
+    "fields": {
+      "course": 3,
+      "module_title": "Introduction",
+      "module_title_slug": "introduction"
+    }
+  },
+  {
+    "model": "courses.module",
+    "pk": 2,
+    "fields": {
+      "course": 3,
+      "module_title": "Form",
+      "module_title_slug": "form"
+    }
+  },
+  {
+    "model": "courses.module",
+    "pk": 3,
+    "fields": {
+      "course": 3,
+      "module_title": "Light",
+      "module_title_slug": "light"
+    }
+  },
+  {
+    "model": "courses.module",
+    "pk": 4,
+    "fields": {
+      "course": 3,
+      "module_title": "Emotional Impact",
+      "module_title_slug": "emotional-impact"
+    }
+  },
+  {
+    "model": "courses.module",
+    "pk": 5,
+    "fields": {
+      "course": 3,
+      "module_title": "Materials",
+      "module_title_slug": "materials"
+    }
+  },
+  {
+    "model": "courses.module",
+    "pk": 6,
+    "fields": {
+      "course": 3,
+      "module_title": "Composition",
+      "module_title_slug": "composition"
+    }
+  },
+  {
+    "model": "courses.module",
+    "pk": 7,
+    "fields": {
+      "course": 3,
+      "module_title": "Colour",
+      "module_title_slug": "colour"
+    }
+  },
+  {
+    "model": "courses.module",
+    "pk": 8,
+    "fields": {
+      "course": 3,
+      "module_title": "Outro",
+      "module_title_slug": "outro"
+    }
+  },
+  {
+    "model": "courses.module",
+    "pk": 9,
+    "fields": {
+      "course": 5,
+      "module_title": "Introduction & Basic Setup",
+      "module_title_slug": "introduction-basic-setup"
+    }
+  },
+  {
+    "model": "courses.module",
+    "pk": 10,
+    "fields": {
+      "course": 5,
+      "module_title": "Sketching",
+      "module_title_slug": "sketching"
+    }
+  },
+  {
+    "model": "courses.module",
+    "pk": 11,
+    "fields": {
+      "course": 5,
+      "module_title": "Rough Color",
+      "module_title_slug": "rough-color"
+    }
+  },
+  {
+    "model": "courses.module",
+    "pk": 12,
+    "fields": {
+      "course": 5,
+      "module_title": "Artwork Texturing",
+      "module_title_slug": "artwork-texturing"
+    }
+  },
+  {
+    "model": "courses.module",
+    "pk": 13,
+    "fields": {
+      "course": 5,
+      "module_title": "Refinement & Finishing Touches",
+      "module_title_slug": "refinement-finishing-touches"
+    }
+  },
+  {
+    "model": "courses.module",
+    "pk": 14,
+    "fields": {
+      "course": 5,
+      "module_title": "Course Recap",
+      "module_title_slug": "course-recap"
+    }
+  },
+  {
+    "model": "courses.module",
+    "pk": 15,
+    "fields": {
+      "course": 4,
+      "module_title": "Advanced Class Based Views",
+      "module_title_slug": "advanced-class-based-views"
+    }
+  },
+  {
+    "model": "courses.module",
+    "pk": 16,
+    "fields": {
+      "course": 4,
+      "module_title": "Build a REST API",
+      "module_title_slug": "build-a-rest-api"
+    }
+  },
+  {
+    "model": "courses.module",
+    "pk": 17,
+    "fields": {
+      "course": 4,
+      "module_title": "Tests, Tests, Tests",
+      "module_title_slug": "tests-tests-tests"
+    }
+  },
+  {
+    "model": "courses.module",
+    "pk": 18,
+    "fields": {
+      "course": 4,
+      "module_title": "Securing Django",
+      "module_title_slug": "securing-django"
+    }
+  },
+  {
+    "model": "courses.module",
+    "pk": 19,
+    "fields": {
+      "course": 1,
+      "module_title": "Piano Basics",
+      "module_title_slug": "piano-basics"
+    }
+  },
+  {
+    "model": "courses.module",
+    "pk": 20,
+    "fields": {
+      "course": 1,
+      "module_title": "Taking Chords to Another Level",
+      "module_title_slug": "taking-chords-to-another-level"
+    }
+  },
+  {
+    "model": "courses.module",
+    "pk": 21,
+    "fields": {
+      "course": 1,
+      "module_title": "Chord Patterns & Techniques",
+      "module_title_slug": "chord-patterns-techniques"
+    }
+  },
+  {
+    "model": "courses.module",
+    "pk": 22,
+    "fields": {
+      "course": 1,
+      "module_title": "Suspension & Passing Chords",
+      "module_title_slug": "fifths-suspension-passing-chords"
+    }
+  },
+  {
+    "model": "courses.module",
+    "pk": 23,
+    "fields": {
+      "course": 2,
+      "module_title": "Intro to Code Editors",
+      "module_title_slug": "intro-to-code-editors"
+    }
+  },
+  {
+    "model": "courses.module",
+    "pk": 24,
+    "fields": {
+      "course": 2,
+      "module_title": "Introduction to Django App and Project",
+      "module_title_slug": "introduction-to-django-app-and-project"
+    }
+  },
+  {
+    "model": "courses.module",
+    "pk": 25,
+    "fields": {
+      "course": 2,
+      "module_title": "Django Models",
+      "module_title_slug": "django-models"
+    }
+  },
+  {
+    "model": "courses.module",
+    "pk": 26,
+    "fields": {
+      "course": 2,
+      "module_title": "Building a Blog App",
+      "module_title_slug": "building-a-blog-app"
+    }
+  },
+  {
+    "model": "courses.module",
+    "pk": 27,
+    "fields": {
+      "course": 2,
+      "module_title": "Deploying your Django App",
+      "module_title_slug": "deploying-your-django-app"
+    }
+  },
+  {
+    "model": "courses.module",
+    "pk": 28,
+    "fields": {
+      "course": 6,
+      "module_title": "Observation",
+      "module_title_slug": "observation"
+    }
+  },
+  {
+    "model": "courses.module",
+    "pk": 29,
+    "fields": {
+      "course": 6,
+      "module_title": "Be Like a Child",
+      "module_title_slug": "be-like-a-child"
+    }
+  },
+  {
+    "model": "courses.module",
+    "pk": 30,
+    "fields": {
+      "course": 6,
+      "module_title": "Do Something Unusual",
+      "module_title_slug": "do-something-unusual"
+    }
+  },
+  {
+    "model": "courses.module",
+    "pk": 32,
+    "fields": {
+      "course": 6,
+      "module_title": "Enjoy Yourself",
+      "module_title_slug": "enjoy-yourself"
+    }
+  },
+  {
+    "model": "courses.module",
+    "pk": 33,
+    "fields": {
+      "course": 6,
+      "module_title": "Explore and Create",
+      "module_title_slug": "explore-and-create"
+    }
+  },
+  {
+    "model": "courses.module",
+    "pk": 34,
+    "fields": {
+      "course": 7,
+      "module_title": "Understanding Brand Naming",
+      "module_title_slug": "understanding-brand-naming"
+    }
+  },
+  {
+    "model": "courses.module",
+    "pk": 35,
+    "fields": {
+      "course": 7,
+      "module_title": "The Perfect Brand Name",
+      "module_title_slug": "choosing-the-perfect-brand-name"
+    }
+  },
+  {
+    "model": "courses.module",
+    "pk": 36,
+    "fields": {
+      "course": 8,
+      "module_title": "Loving Yourself",
+      "module_title_slug": "love-yourself"
+    }
+  },
+  {
+    "model": "courses.module",
+    "pk": 37,
+    "fields": {
+      "course": 8,
+      "module_title": "Loving Others",
+      "module_title_slug": "loving-others"
+    }
+  },
+  {
+    "model": "courses.module",
+    "pk": 38,
+    "fields": {
+      "course": 9,
+      "module_title": "Introduction",
+      "module_title_slug": "introduction"
+    }
+  },
+  {
+    "model": "courses.module",
+    "pk": 39,
+    "fields": {
+      "course": 9,
+      "module_title": "Components",
+      "module_title_slug": "components"
+    }
+  },
+  {
+    "model": "courses.module",
+    "pk": 40,
+    "fields": {
+      "course": 9,
+      "module_title": "Reducers & Context API",
+      "module_title_slug": "reducers-context-api"
+    }
+  },
+  {
+    "model": "courses.module",
+    "pk": 41,
+    "fields": {
+      "course": 10,
+      "module_title": "Hands on the GCP",
+      "module_title_slug": "hands-on-the-gcp"
+    }
+  },
+  {
+    "model": "courses.module",
+    "pk": 42,
+    "fields": {
+      "course": 10,
+      "module_title": "Cloud SQL & More",
+      "module_title_slug": "cloud-sql-more"
+    }
+  },
+  {
+    "model": "courses.module",
+    "pk": 43,
+    "fields": {
+      "course": 11,
+      "module_title": "Fundamentals",
+      "module_title_slug": "fundamentals"
+    }
+  },
+  {
+    "model": "courses.module",
+    "pk": 44,
+    "fields": {
+      "course": 11,
+      "module_title": "A Closer Look at Functions",
+      "module_title_slug": "a-closer-look-at-functions"
+    }
+  },
+  {
+    "model": "courses.module",
+    "pk": 45,
+    "fields": {
+      "course": 12,
+      "module_title": "Learn HTML",
+      "module_title_slug": "learn-html"
+    }
+  },
+  {
+    "model": "courses.module",
+    "pk": 46,
+    "fields": {
+      "course": 12,
+      "module_title": "Learn CSS",
+      "module_title_slug": "learn-css"
+    }
+  },
+  {
+    "model": "courses.module",
+    "pk": 47,
+    "fields": {
+      "course": 12,
+      "module_title": "Learn JavaScript",
+      "module_title_slug": "learn-javascript"
+    }
+  },
+  {
+    "model": "courses.module",
+    "pk": 48,
+    "fields": {
+      "course": 13,
+      "module_title": "Rough Sketching",
+      "module_title_slug": "rough-sketching"
+    }
+  },
+  {
+    "model": "courses.module",
+    "pk": 49,
+    "fields": {
+      "course": 13,
+      "module_title": "Polish and Presentation",
+      "module_title_slug": "polish-and-presentation"
+    }
+  },
+  {
+    "model": "courses.module",
+    "pk": 50,
+    "fields": {
+      "course": 14,
+      "module_title": "Introduction",
+      "module_title_slug": "introduction"
+    }
+  },
+  {
+    "model": "courses.module",
+    "pk": 51,
+    "fields": {
+      "course": 14,
+      "module_title": "Deep Dive into Brushwork",
+      "module_title_slug": "deep-dive-into-brushwork"
+    }
+  },
+  {
+    "model": "courses.module",
+    "pk": 52,
+    "fields": {
+      "course": 14,
+      "module_title": "Finishing Up",
+      "module_title_slug": "finishing-up"
+    }
+  },
+  {
+    "model": "courses.module",
+    "pk": 58,
+    "fields": {
+      "course": 22,
+      "module_title": "Introduction",
+      "module_title_slug": "introduction"
+    }
+  },
+  {
+    "model": "courses.module",
+    "pk": 59,
+    "fields": {
+      "course": 22,
+      "module_title": "Fantasy Landscaping",
+      "module_title_slug": "fantasy-landscaping"
+    }
+  },
+  {
+    "model": "courses.module",
+    "pk": 60,
+    "fields": {
+      "course": 22,
+      "module_title": "Finishing Up",
+      "module_title_slug": "finishing-up"
+    }
+  }
+]

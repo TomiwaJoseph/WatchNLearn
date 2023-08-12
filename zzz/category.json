@@ -1,0 +1,58 @@
+[
+  {
+    "model": "courses.category",
+    "pk": 1,
+    "fields": {
+      "category_title": "Art n Design",
+      "slug": "art-n-design"
+    }
+  },
+  {
+    "model": "courses.category",
+    "pk": 2,
+    "fields": {
+      "category_title": "Music",
+      "slug": "music"
+    }
+  },
+  {
+    "model": "courses.category",
+    "pk": 3,
+    "fields": {
+      "category_title": "Photography",
+      "slug": "photography"
+    }
+  },
+  {
+    "model": "courses.category",
+    "pk": 4,
+    "fields": {
+      "category_title": "Development",
+      "slug": "development"
+    }
+  },
+  {
+    "model": "courses.category",
+    "pk": 5,
+    "fields": {
+      "category_title": "Self Development",
+      "slug": "self-development"
+    }
+  },
+  {
+    "model": "courses.category",
+    "pk": 6,
+    "fields": {
+      "category_title": "Marketing",
+      "slug": "marketing"
+    }
+  },
+  {
+    "model": "courses.category",
+    "pk": 7,
+    "fields": {
+      "category_title": "IT and Software",
+      "slug": "it-and-software"
+    }
+  }
+]

@@ -1,0 +1,722 @@
+[
+  {
+    "model": "courses.content",
+    "pk": 2,
+    "fields": {
+      "module": 9,
+      "title": "Introduction to Photoshop",
+      "content_description": "<p><strong>Welcome!</strong></p>\r\n\r\n<p>In this video, I will introduce you to <strong>Photoshop </strong>and let you know how to set up your <em><strong>canvas</strong></em> for painting.</p>",
+      "content_video": "content_videos/Candle_-_1437_YCw9UiZ.mp4",
+      "content_image": "",
+      "content_file": ""
+    }
+  },
+  {
+    "model": "courses.content",
+    "pk": 3,
+    "fields": {
+      "module": 10,
+      "title": "Be Sketchy!",
+      "content_description": "<p><strong>Sketching!</strong></p>\r\n\r\n<p>In this video, I will introduce you to <strong>sketching&nbsp;</strong>and let you know how to go about it.</p>\r\n\r\n<p>An image file to use as follow along has been provided to download for you.</p>",
+      "content_video": "content_videos/Candle_-_1437.mp4",
+      "content_image": "content_images/adrian-wilkins-frenzy-sketch01.jpg",
+      "content_file": ""
+    }
+  },
+  {
+    "model": "courses.content",
+    "pk": 4,
+    "fields": {
+      "module": 11,
+      "title": "Color it Rough",
+      "content_description": "<p><span style=\"font-size:14px\"><strong>Rough Color!</strong></span></p>\r\n\r\n<p>In this video, I will introduce you to <strong>colorinig&nbsp;</strong>and let you know how to lay down some rough colors for your painting.</p>\r\n\r\n<p>If you want to know more about color, read the file content below.</p>\r\n\r\n<p><strong>Enjoy!</strong></p>",
+      "content_video": "content_videos/Candle_-_1437_2jghnhs.mp4",
+      "content_image": "",
+      "content_file": "content_files/Color.pdf"
+    }
+  },
+  {
+    "model": "courses.content",
+    "pk": 5,
+    "fields": {
+      "module": 9,
+      "title": "How to Setup Photoshop",
+      "content_description": "<p>Basic setup for digital painting in Photoshop</p>",
+      "content_video": "content_videos/Candle_-_1437_wmcqKM8.mp4",
+      "content_image": "",
+      "content_file": ""
+    }
+  },
+  {
+    "model": "courses.content",
+    "pk": 6,
+    "fields": {
+      "module": 13,
+      "title": "Refined Painting",
+      "content_description": "<p>This class is about refining your <em><strong>painting</strong></em>.</p>\r\n\r\n<p>It is more of &quot;you can have my husband but please, don&#39;t mess with my man&quot;.</p>",
+      "content_video": "content_videos/Candle_-_1437_kWUo4bp.mp4",
+      "content_image": "",
+      "content_file": ""
+    }
+  },
+  {
+    "model": "courses.content",
+    "pk": 7,
+    "fields": {
+      "module": 13,
+      "title": "Details & Effects",
+      "content_description": "<p>This class explains in details how to add <em><strong>details </strong></em>and <em><strong>effects </strong></em>like blending options and stuff.</p>",
+      "content_video": "content_videos/Candle_-_1437_Krza9Xd.mp4",
+      "content_image": "",
+      "content_file": ""
+    }
+  },
+  {
+    "model": "courses.content",
+    "pk": 8,
+    "fields": {
+      "module": 13,
+      "title": "Final Polish",
+      "content_description": "<p>Add final polishes to your artwork and call it a day...or not!</p>",
+      "content_video": "content_videos/Candle_-_1437_XPwQtwY.mp4",
+      "content_image": "",
+      "content_file": ""
+    }
+  },
+  {
+    "model": "courses.content",
+    "pk": 9,
+    "fields": {
+      "module": 12,
+      "title": "Texture It!",
+      "content_description": "<p>Add life to your artwork by adding <em><strong>textures </strong></em>as opposed to airbrushed paintings that look...</p>",
+      "content_video": "content_videos/Candle_-_1437_iD4WjJg.mp4",
+      "content_image": "",
+      "content_file": ""
+    }
+  },
+  {
+    "model": "courses.content",
+    "pk": 10,
+    "fields": {
+      "module": 14,
+      "title": "Parting Gift",
+      "content_description": "<p>This is the overview of all we have been through in the classes that we&#39;ve had.</p>",
+      "content_video": "content_videos/Candle_-_1437_aMPmEaz.mp4",
+      "content_image": "",
+      "content_file": ""
+    }
+  },
+  {
+    "model": "courses.content",
+    "pk": 11,
+    "fields": {
+      "module": 1,
+      "title": "Introduction to Photography",
+      "content_description": "<p>This is the introduction to <em><strong>architecture </strong></em>photography first class</p>",
+      "content_video": "content_videos/Candle_-_1437_OIQq0Lu.mp4",
+      "content_image": "",
+      "content_file": ""
+    }
+  },
+  {
+    "model": "courses.content",
+    "pk": 13,
+    "fields": {
+      "module": 2,
+      "title": "Lets' talk Form",
+      "content_description": "<p>This class is about <em><strong>form</strong></em>. This is not the type of form you fill...don&#39;t mind me.</p>",
+      "content_video": "content_videos/Candle_-_1437_IlOynlM.mp4",
+      "content_image": "",
+      "content_file": ""
+    }
+  },
+  {
+    "model": "courses.content",
+    "pk": 14,
+    "fields": {
+      "module": 3,
+      "title": "Light it Up",
+      "content_description": "<p>Yes! Light is very important in <em><strong>architecture </strong></em>photography...any type of photography <strong>infact</strong>.</p>",
+      "content_video": "content_videos/Candle_-_1437_K3tEgsP.mp4",
+      "content_image": "",
+      "content_file": ""
+    }
+  },
+  {
+    "model": "courses.content",
+    "pk": 15,
+    "fields": {
+      "module": 4,
+      "title": "Impact Emotionally!",
+      "content_description": "<p>In this class we talk about how to make your photographs evoke emotions in <em><strong>people</strong></em>, <strong>plants</strong>, <strong>animals</strong>, <em><strong>cups</strong></em>, <em><strong>spoons</strong></em>...anything.</p>",
+      "content_video": "content_videos/Candle_-_1437_lBSd4rF.mp4",
+      "content_image": "",
+      "content_file": ""
+    }
+  },
+  {
+    "model": "courses.content",
+    "pk": 16,
+    "fields": {
+      "module": 5,
+      "title": "What a Building is Made Up Of",
+      "content_description": "<p>In this class we talk about materials.</p>",
+      "content_video": "content_videos/Candle_-_1437_AjzRBgV.mp4",
+      "content_image": "",
+      "content_file": ""
+    }
+  },
+  {
+    "model": "courses.content",
+    "pk": 17,
+    "fields": {
+      "module": 6,
+      "title": "Compose It!",
+      "content_description": "<p>Be <em><strong>composited!&nbsp;</strong></em>Know angles, camera positions, one-third views, concepts and stuff</p>",
+      "content_video": "content_videos/Candle_-_1437_o1GK0Mf.mp4",
+      "content_image": "",
+      "content_file": ""
+    }
+  },
+  {
+    "model": "courses.content",
+    "pk": 18,
+    "fields": {
+      "module": 7,
+      "title": "Yes, Color!",
+      "content_description": "<p>The most fanscinating topic ever...color. It is so vast than the human eye and mind can comprehend. Some&nbsp;<em><strong>animals </strong></em>see more colors than humans.</p>",
+      "content_video": "content_videos/Candle_-_1437_WVKvN7E.mp4",
+      "content_image": "",
+      "content_file": ""
+    }
+  },
+  {
+    "model": "courses.content",
+    "pk": 19,
+    "fields": {
+      "module": 8,
+      "title": "Lets' Recap",
+      "content_description": "<p>Here is the summary of what we have discussed so far...</p>\r\n\r\n<ul>\r\n\t<li>First thing</li>\r\n\t<li>Second thing</li>\r\n\t<li>Third thing</li>\r\n\t<li>Fourth thing</li>\r\n</ul>",
+      "content_video": "content_videos/Candle_-_1437_jOWDlOv.mp4",
+      "content_image": "",
+      "content_file": ""
+    }
+  },
+  {
+    "model": "courses.content",
+    "pk": 20,
+    "fields": {
+      "module": 15,
+      "title": "Extending Class Based Views",
+      "content_description": "<p>This class will move you from the <em><strong>basic </strong></em>function based views to <em><strong>advanced</strong></em> class based views</p>",
+      "content_video": "content_videos/Candle_-_1437_4ZdW9cB.mp4",
+      "content_image": "",
+      "content_file": ""
+    }
+  },
+  {
+    "model": "courses.content",
+    "pk": 21,
+    "fields": {
+      "module": 15,
+      "title": "Using Mixins",
+      "content_description": "<p>This class goes in depth on using <em><strong>mixins</strong></em>. They make life easier and code writing more comfortable.</p>",
+      "content_video": "content_videos/Candle_-_1437_m5DNsqe.mp4",
+      "content_image": "",
+      "content_file": ""
+    }
+  },
+  {
+    "model": "courses.content",
+    "pk": 22,
+    "fields": {
+      "module": 16,
+      "title": "REST Easy!",
+      "content_description": "<p>This class will be solely on using the Django Rest Frame to scaffold, authenticating with DRF and so on.</p>",
+      "content_video": "content_videos/Candle_-_1437_heMXLtf.mp4",
+      "content_image": "",
+      "content_file": ""
+    }
+  },
+  {
+    "model": "courses.content",
+    "pk": 23,
+    "fields": {
+      "module": 17,
+      "title": "Why Testing Matters",
+      "content_description": "<p>This class gives insight as to why testing matters, how Django handles testing, how to test models, views etc.</p>",
+      "content_video": "content_videos/Candle_-_1437_4RjnEOr.mp4",
+      "content_image": "",
+      "content_file": ""
+    }
+  },
+  {
+    "model": "courses.content",
+    "pk": 24,
+    "fields": {
+      "module": 18,
+      "title": "Planning for Failure",
+      "content_description": "<p style=\"text-align:justify\">There are people whose sole aim is to break into your system to do good...or to cause mayhem. Either way, prepare for them.</p>",
+      "content_video": "content_videos/Candle_-_1437_nfARkTP.mp4",
+      "content_image": "",
+      "content_file": ""
+    }
+  },
+  {
+    "model": "courses.content",
+    "pk": 25,
+    "fields": {
+      "module": 23,
+      "title": "Setting Up - Code Editors",
+      "content_description": "<p style=\"text-align:justify\">This is the beginning part of your Django journey. I will take you through how to set up your code editors be it VS Code, Sublime Text, Brackets or whatever you want to use.</p>",
+      "content_video": "content_videos/Candle_-_1437_VaPpumS.mp4",
+      "content_image": "",
+      "content_file": ""
+    }
+  },
+  {
+    "model": "courses.content",
+    "pk": 26,
+    "fields": {
+      "module": 24,
+      "title": "App or Project?",
+      "content_description": "<p>Discerning the difference is the key. In this class you will understand the distinction between the two.</p>",
+      "content_video": "content_videos/Candle_-_1437_DtZe1OA.mp4",
+      "content_image": "",
+      "content_file": ""
+    }
+  },
+  {
+    "model": "courses.content",
+    "pk": 27,
+    "fields": {
+      "module": 25,
+      "title": "Model It!",
+      "content_description": "<p>Learn how Django models works. What CharFields, SlugField, TextField, FileField all means</p>",
+      "content_video": "content_videos/Candle_-_1437_E1yZHnp.mp4",
+      "content_image": "",
+      "content_file": ""
+    }
+  },
+  {
+    "model": "courses.content",
+    "pk": 28,
+    "fields": {
+      "module": 26,
+      "title": "Blog App",
+      "content_description": "<p>In this class, we build a blog app to show you the basic CRUD applications. CRUD means Create, Read, Update and Delete.</p>",
+      "content_video": "content_videos/Candle_-_1437_7nEd11b.mp4",
+      "content_image": "",
+      "content_file": ""
+    }
+  },
+  {
+    "model": "courses.content",
+    "pk": 29,
+    "fields": {
+      "module": 27,
+      "title": "Deploy It",
+      "content_description": "<p>Make your app accessible anywhere in the world by deploying it. I will do the hand holding on how to go about this.</p>",
+      "content_video": "content_videos/Candle_-_1437_gHMrphB.mp4",
+      "content_image": "",
+      "content_file": ""
+    }
+  },
+  {
+    "model": "courses.content",
+    "pk": 30,
+    "fields": {
+      "module": 41,
+      "title": "GCP",
+      "content_description": "<p>We&#39;ll talk about GCP</p>",
+      "content_video": "content_videos/Candle_-_1437_WWtgVr5.mp4",
+      "content_image": "",
+      "content_file": ""
+    }
+  },
+  {
+    "model": "courses.content",
+    "pk": 31,
+    "fields": {
+      "module": 42,
+      "title": "Cloud SQL",
+      "content_description": "<p>We&#39;ll discuss Cloud SQL</p>",
+      "content_video": "content_videos/Candle_-_1437_yV6tFSZ.mp4",
+      "content_image": "",
+      "content_file": ""
+    }
+  },
+  {
+    "model": "courses.content",
+    "pk": 32,
+    "fields": {
+      "module": 43,
+      "title": "Fundamentals",
+      "content_description": "<p>This is the fundamentals of JavaScript</p>",
+      "content_video": "content_videos/Candle_-_1437_qGDGgxN.mp4",
+      "content_image": "",
+      "content_file": ""
+    }
+  },
+  {
+    "model": "courses.content",
+    "pk": 33,
+    "fields": {
+      "module": 44,
+      "title": "Functions",
+      "content_description": "<p>Yes, functions. Lets talk about it.</p>",
+      "content_video": "content_videos/Candle_-_1437_BkrNiVN.mp4",
+      "content_image": "",
+      "content_file": ""
+    }
+  },
+  {
+    "model": "courses.content",
+    "pk": 34,
+    "fields": {
+      "module": 45,
+      "title": "HTML",
+      "content_description": "<p>Yes, HTML.</p>",
+      "content_video": "content_videos/Candle_-_1437_csXGf8H.mp4",
+      "content_image": "",
+      "content_file": ""
+    }
+  },
+  {
+    "model": "courses.content",
+    "pk": 35,
+    "fields": {
+      "module": 46,
+      "title": "CSS",
+      "content_description": "<p>Yes, CSS</p>",
+      "content_video": "content_videos/Candle_-_1437_XP6Y9W4.mp4",
+      "content_image": "",
+      "content_file": ""
+    }
+  },
+  {
+    "model": "courses.content",
+    "pk": 36,
+    "fields": {
+      "module": 47,
+      "title": "JavaScript",
+      "content_description": "<p>Yes, JavaScript.</p>",
+      "content_video": "content_videos/Candle_-_1437_pR2FcXp.mp4",
+      "content_image": "",
+      "content_file": ""
+    }
+  },
+  {
+    "model": "courses.content",
+    "pk": 37,
+    "fields": {
+      "module": 38,
+      "title": "Introduction",
+      "content_description": "<p>Introduction to React</p>",
+      "content_video": "content_videos/Candle_-_1437_4qEQqit.mp4",
+      "content_image": "",
+      "content_file": ""
+    }
+  },
+  {
+    "model": "courses.content",
+    "pk": 38,
+    "fields": {
+      "module": 39,
+      "title": "Components",
+      "content_description": "<p>Yes, Components.</p>",
+      "content_video": "content_videos/Candle_-_1437_Dnt3QXW.mp4",
+      "content_image": "",
+      "content_file": ""
+    }
+  },
+  {
+    "model": "courses.content",
+    "pk": 39,
+    "fields": {
+      "module": 40,
+      "title": "Reducers",
+      "content_description": "<p>Yes, Reducers</p>",
+      "content_video": "content_videos/Candle_-_1437_vUSMnx8.mp4",
+      "content_image": "",
+      "content_file": ""
+    }
+  },
+  {
+    "model": "courses.content",
+    "pk": 40,
+    "fields": {
+      "module": 40,
+      "title": "Context API",
+      "content_description": "<p>Yes, Context API.</p>",
+      "content_video": "content_videos/Candle_-_1437_n80XcSg.mp4",
+      "content_image": "",
+      "content_file": ""
+    }
+  },
+  {
+    "model": "courses.content",
+    "pk": 41,
+    "fields": {
+      "module": 48,
+      "title": "Portrait Sketching",
+      "content_description": "<p>Something</p>",
+      "content_video": "content_videos/Candle_-_1437_AVoCtdy.mp4",
+      "content_image": "",
+      "content_file": ""
+    }
+  },
+  {
+    "model": "courses.content",
+    "pk": 42,
+    "fields": {
+      "module": 19,
+      "title": "Learn the Basics!",
+      "content_description": "<p>Learning the basics of anything is very important. It serves as the foundation to build on.</p>",
+      "content_video": "content_videos/Candle_-_1437_SBPSZ0V.mp4",
+      "content_image": "",
+      "content_file": ""
+    }
+  },
+  {
+    "model": "courses.content",
+    "pk": 43,
+    "fields": {
+      "module": 20,
+      "title": "Go to Another Level",
+      "content_description": "<p>Yes. Now that you have the <strong>basics </strong>in your back pocket, let&#39;s take our <strong>chords </strong>to another level.</p>",
+      "content_video": "content_videos/Candle_-_1437_33mjrPu.mp4",
+      "content_image": "",
+      "content_file": ""
+    }
+  },
+  {
+    "model": "courses.content",
+    "pk": 44,
+    "fields": {
+      "module": 21,
+      "title": "Know Patterns and Techniques",
+      "content_description": "<p>Yes. Patterns and Techniques.</p>",
+      "content_video": "content_videos/Candle_-_1437_CniPX9e.mp4",
+      "content_image": "",
+      "content_file": ""
+    }
+  },
+  {
+    "model": "courses.content",
+    "pk": 45,
+    "fields": {
+      "module": 22,
+      "title": "Suspend Em'",
+      "content_description": "<p>Suspend dem chords.</p>",
+      "content_video": "content_videos/Candle_-_1437_SjNqeZC.mp4",
+      "content_image": "content_images/piano-suspend.png",
+      "content_file": ""
+    }
+  },
+  {
+    "model": "courses.content",
+    "pk": 46,
+    "fields": {
+      "module": 22,
+      "title": "Pass Em'",
+      "content_description": "<p>Yes. Now pass them.</p>",
+      "content_video": "content_videos/Candle_-_1437_mItauXy.mp4",
+      "content_image": "",
+      "content_file": ""
+    }
+  },
+  {
+    "model": "courses.content",
+    "pk": 47,
+    "fields": {
+      "module": 36,
+      "title": "Embrace Yourself!",
+      "content_description": "<p>Yes. Embrace yourself.</p>",
+      "content_video": "content_videos/Candle_-_1437_CN1uP2f.mp4",
+      "content_image": "",
+      "content_file": ""
+    }
+  },
+  {
+    "model": "courses.content",
+    "pk": 48,
+    "fields": {
+      "module": 36,
+      "title": "Nurture Yourself!",
+      "content_description": "<p>Yes. <strong>Nurture </strong>yourself.</p>",
+      "content_video": "content_videos/Candle_-_1437_RUueBWX.mp4",
+      "content_image": "",
+      "content_file": ""
+    }
+  },
+  {
+    "model": "courses.content",
+    "pk": 49,
+    "fields": {
+      "module": 37,
+      "title": "Grow Your Self!",
+      "content_description": "<p>Yes. Start growing your <strong>SELF </strong>now!</p>",
+      "content_video": "content_videos/Candle_-_1437_YfU1qV8.mp4",
+      "content_image": "",
+      "content_file": ""
+    }
+  },
+  {
+    "model": "courses.content",
+    "pk": 50,
+    "fields": {
+      "module": 37,
+      "title": "Love Yourself!",
+      "content_description": "<p>Do this first! Others comes next.</p>",
+      "content_video": "content_videos/Candle_-_1437_6B0IkcL.mp4",
+      "content_image": "",
+      "content_file": ""
+    }
+  },
+  {
+    "model": "courses.content",
+    "pk": 51,
+    "fields": {
+      "module": 37,
+      "title": "Love Others!",
+      "content_description": "<p>You can now love other people and things.</p>",
+      "content_video": "content_videos/Candle_-_1437_HJwxtYO.mp4",
+      "content_image": "",
+      "content_file": ""
+    }
+  },
+  {
+    "model": "courses.content",
+    "pk": 52,
+    "fields": {
+      "module": 44,
+      "title": "Do it Anonymously!",
+      "content_description": "<p>Let&#39;s take a look at anonymous functions.</p>",
+      "content_video": "content_videos/Candle_-_1437_HIKutQH.mp4",
+      "content_image": "",
+      "content_file": ""
+    }
+  },
+  {
+    "model": "courses.content",
+    "pk": 53,
+    "fields": {
+      "module": 48,
+      "title": "Rough it Out!",
+      "content_description": "<p>Rough sketching it is. Don&#39;t think about the final outcome just yet. Just <strong>FEEL</strong>.</p>",
+      "content_video": "content_videos/Candle_-_1437_tdDJq1S.mp4",
+      "content_image": "",
+      "content_file": ""
+    }
+  },
+  {
+    "model": "courses.content",
+    "pk": 54,
+    "fields": {
+      "module": 49,
+      "title": "Polish It!",
+      "content_description": "<p>Polish your artwork by adding filters, correcting tones and saturations and stuff.</p>",
+      "content_video": "content_videos/Candle_-_1437_toy5kF7.mp4",
+      "content_image": "content_images/alex-hanukafast-asia-street-8.jpg",
+      "content_file": ""
+    }
+  },
+  {
+    "model": "courses.content",
+    "pk": 55,
+    "fields": {
+      "module": 49,
+      "title": "Present It.",
+      "content_description": "<p>Presentation is key.</p>",
+      "content_video": "content_videos/Candle_-_1437_fZJCVFt.mp4",
+      "content_image": "",
+      "content_file": ""
+    }
+  },
+  {
+    "model": "courses.content",
+    "pk": 56,
+    "fields": {
+      "module": 34,
+      "title": "Understanding What is in a Name",
+      "content_description": "<p>Understand it.</p>",
+      "content_video": "content_videos/Candle_-_1437_CZfPH9r.mp4",
+      "content_image": "",
+      "content_file": ""
+    }
+  },
+  {
+    "model": "courses.content",
+    "pk": 57,
+    "fields": {
+      "module": 35,
+      "title": "Make it Perfect!",
+      "content_description": "<p>Get the <strong><em>perfect </em></strong>brand name.</p>",
+      "content_video": "content_videos/Candle_-_1437_dyRThzc.mp4",
+      "content_image": "",
+      "content_file": ""
+    }
+  },
+  {
+    "model": "courses.content",
+    "pk": 58,
+    "fields": {
+      "module": 28,
+      "title": "Observe!",
+      "content_description": "<p>Observe.</p>",
+      "content_video": "content_videos/Candle_-_1437_tFLkq0l.mp4",
+      "content_image": "",
+      "content_file": ""
+    }
+  },
+  {
+    "model": "courses.content",
+    "pk": 59,
+    "fields": {
+      "module": 29,
+      "title": "Be Child-Like",
+      "content_description": "<p>Be <u><em><strong>Unusual</strong></em></u>.</p>",
+      "content_video": "content_videos/Candle_-_1437_XJndGvh.mp4",
+      "content_image": "",
+      "content_file": ""
+    }
+  },
+  {
+    "model": "courses.content",
+    "pk": 60,
+    "fields": {
+      "module": 30,
+      "title": "Do Things Unusual",
+      "content_description": "<p>Do things unusual.</p>",
+      "content_video": "content_videos/Candle_-_1437_A3uaDAO.mp4",
+      "content_image": "",
+      "content_file": ""
+    }
+  },
+  {
+    "model": "courses.content",
+    "pk": 61,
+    "fields": {
+      "module": 32,
+      "title": "Enjoy Yourself!",
+      "content_description": "<p>Live a little and don&#39;t GAF.</p>",
+      "content_video": "content_videos/Candle_-_1437_W6aN5V0.mp4",
+      "content_image": "",
+      "content_file": ""
+    }
+  },
+  {
+    "model": "courses.content",
+    "pk": 62,
+    "fields": {
+      "module": 33,
+      "title": "Explore and Create",
+      "content_description": "<p>Don&#39;t be afraid to <strong>explore </strong>uncharted territories and <strong>create </strong>new things.</p>",
+      "content_video": "content_videos/Candle_-_1437_Mcl8y1J.mp4",
+      "content_image": "",
+      "content_file": ""
+    }
+  }
+]

@@ -1,0 +1,26 @@
+[
+  {
+    "model": "main.newsletter",
+    "pk": 1,
+    "fields": {
+      "email": "johnsmith@gmail.com",
+      "date_created": "2022-05-03T20:30:34.651Z"
+    }
+  },
+  {
+    "model": "main.newsletter",
+    "pk": 2,
+    "fields": {
+      "email": "janedoe@gmail.com",
+      "date_created": "2022-05-03T20:32:12.523Z"
+    }
+  },
+  {
+    "model": "main.newsletter",
+    "pk": 3,
+    "fields": {
+      "email": "tomiwajoseph88@gmail.com",
+      "date_created": "2022-05-03T20:37:26.126Z"
+    }
+  }
+]

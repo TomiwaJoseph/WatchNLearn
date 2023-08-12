@@ -1,0 +1,56 @@
+[
+  {
+    "model": "main.landingpagepictures",
+    "pk": 3,
+    "fields": {
+      "caption": "\"Learning has nothing to do with age.\"",
+      "image": "landing_page_pictures/learning-has-nothing-to-do-with-age.jpg",
+      "slug": "learning-has-nothing-to-do-with-age"
+    }
+  },
+  {
+    "model": "main.landingpagepictures",
+    "pk": 4,
+    "fields": {
+      "caption": "\"You'd be surprised as to what learning really is\"",
+      "image": "landing_page_pictures/youd-be-surprised-as-to-what-learning-really-is.jpg",
+      "slug": "youd-be-surprised-as-to-what-learning-really-is"
+    }
+  },
+  {
+    "model": "main.landingpagepictures",
+    "pk": 5,
+    "fields": {
+      "caption": "\"Learning never exhausts the mind.\"",
+      "image": "landing_page_pictures/learning-never-exhausts-the-mind.jpg",
+      "slug": "learning-never-exhausts-the-mind"
+    }
+  },
+  {
+    "model": "main.landingpagepictures",
+    "pk": 6,
+    "fields": {
+      "caption": "\"I am still learning.\" - Michelangelo",
+      "image": "landing_page_pictures/i-am-still-learning-michelangelo.jpg",
+      "slug": "i-am-still-learning-michelangelo"
+    }
+  },
+  {
+    "model": "main.landingpagepictures",
+    "pk": 7,
+    "fields": {
+      "caption": "\"Being a student is easy. Learning requires actual work.\"",
+      "image": "landing_page_pictures/being-a-student-is-easy-learning-requires-actual-work.jpg",
+      "slug": "being-a-student-is-easy-learning-requires-actual-work"
+    }
+  },
+  {
+    "model": "main.landingpagepictures",
+    "pk": 8,
+    "fields": {
+      "caption": "\"In youth we learn; in age we understand\"",
+      "image": "landing_page_pictures/in-youth-we-learn-in-age-we-understand.jpg",
+      "slug": "in-youth-we-learn-in-age-we-understand"
+    }
+  }
+]

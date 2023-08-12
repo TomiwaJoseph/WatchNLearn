@@ -1,0 +1,257 @@
+[
+  {
+    "model": "courses.course",
+    "pk": 1,
+    "fields": {
+      "instructor": 2,
+      "category": 2,
+      "language": "en",
+      "title": "Piano Improvisation - Fundamentals for Creating Music on the Spot",
+      "slug": "piano-improvisation-fundamentals-for-creating-music-on-the-spot",
+      "thumbnail_image": "course_thumbnails/piano-improvisation-fundamentals-for-creating-music-on-the-spot.jpg",
+      "price": 19,
+      "about_the_course": "<p>Have&nbsp;you&nbsp;ever&nbsp;wanted&nbsp;to&nbsp;be&nbsp;able&nbsp;to play&nbsp;<em><strong>anything </strong></em>on your piano on <em><strong>demand</strong></em>? Ever seen images by the greats and wonder how they manage to create incredible images off the top of their heads?</p>\r\n\r\n<p style=\"text-align:justify\">This course is designed to get you playing along and to give you a head start in your landscape painting journey regardless of what software you use.</p>\r\n\r\n<p style=\"text-align:justify\"><strong>No&nbsp;music theory&nbsp;required!</strong></p>\r\n\r\n<p style=\"text-align:justify\">All you need is basic drawing skill and some inspiration. In this course, you&#39;ll overcome many of the fears and questions you&#39;ve had surrounding the art of landscape painting and we&#39;ll tackle a variety of ways you can get better including:</p>\r\n\r\n<ul>\r\n\t<li style=\"text-align:justify\">Brushes to use</li>\r\n\t<li style=\"text-align:justify\">How to master composition</li>\r\n\t<li style=\"text-align:justify\">How to make your artwork look natural</li>\r\n\t<li style=\"text-align:justify\">How to use leading lines to make your painting more interesting and dynamic</li>\r\n\t<li style=\"text-align:justify\">Much&nbsp;more!!</li>\r\n</ul>\r\n\r\n<p style=\"text-align:justify\">This&nbsp;course&nbsp;is&nbsp;loosely&nbsp;based&nbsp;on landscape painting, a little bit of seascape painting on the way, but the concepts apply to painting universally. No matter what you want to be able to paint, this is a great place to start!</p>",
+      "date_created": "2021-11-04T07:09:48.640Z",
+      "status": "published",
+      "students": [2, 5, 14]
+    }
+  },
+  {
+    "model": "courses.course",
+    "pk": 2,
+    "fields": {
+      "instructor": 10,
+      "category": 4,
+      "language": "en",
+      "title": "Try Django: Learn and Master the Web Framework",
+      "slug": "try-django-learn-and-master-the-web-framework",
+      "thumbnail_image": "course_thumbnails/try-django-learn-and-master-the-web-framework.jpg",
+      "price": 23,
+      "about_the_course": "<p style=\"text-align:justify\">What is Django?</p>\r\n\r\n<p style=\"text-align:justify\">Django is a free, open source, high-end framework written in the famously simple, flexible, and relatively easy-to-learn Python programming language.</p>\r\n\r\n<p style=\"text-align:justify\">Django is a high-level Python web framework that enables rapid development of secure and maintainable websites. This website you are reading this on is developed with Django.</p>\r\n\r\n<p style=\"text-align:justify\"><strong>No&nbsp;computer science theory&nbsp;knowledge required!</strong></p>\r\n\r\n<p style=\"text-align:justify\">All you need is basic drawing skill and some inspiration. In this course, you&#39;ll overcome many of the fears and questions you&#39;ve had surrounding the art of landscape painting and we&#39;ll tackle a variety of ways you can get better including:</p>\r\n\r\n<ul>\r\n\t<li style=\"text-align:justify\">Brushes to use</li>\r\n\t<li style=\"text-align:justify\">How to master composition</li>\r\n\t<li style=\"text-align:justify\">How to make your artwork look natural</li>\r\n\t<li style=\"text-align:justify\">How to use leading lines to make your painting more interesting and dynamic</li>\r\n\t<li style=\"text-align:justify\">Much&nbsp;more!!</li>\r\n</ul>\r\n\r\n<p style=\"text-align:justify\">This&nbsp;course&nbsp;is&nbsp;loosely&nbsp;based&nbsp;on landscape painting, a little bit of seascape painting on the way, but the concepts apply to painting universally. No matter what you want to be able to paint, this is a great place to start!</p>",
+      "date_created": "2021-11-04T07:23:43.710Z",
+      "status": "draft",
+      "students": [1, 2]
+    }
+  },
+  {
+    "model": "courses.course",
+    "pk": 3,
+    "fields": {
+      "instructor": 4,
+      "category": 3,
+      "language": "en",
+      "title": "Architecture Photography - How to Photograph Any Building",
+      "slug": "architecture-photography-how-to-photograph-any-building",
+      "thumbnail_image": "course_thumbnails/architecture-photography-how-to-photograph-any-building_vBxFKpR.jpg",
+      "price": 18,
+      "about_the_course": "<p style=\"text-align:justify\">Have&nbsp;you&nbsp;ever&nbsp;wanted&nbsp;to&nbsp;be&nbsp;able&nbsp;to paint <em><strong>anything </strong></em>on your computer on <em><strong>demand</strong></em>? Ever seen images by the greats and wonder how they manage to create incredible images off the top of their heads?</p>\r\n\r\n<p style=\"text-align:justify\">This course is designed to get you playing along and to give you a head start in your landscape painting journey regardless of what software you use.</p>\r\n\r\n<p style=\"text-align:justify\"><strong>No&nbsp;art theory&nbsp;required!</strong></p>\r\n\r\n<p style=\"text-align:justify\">All you need is basic drawing skill and some inspiration. In this course, you&#39;ll overcome many of the fears and questions you&#39;ve had surrounding the art of landscape painting and we&#39;ll tackle a variety of ways you can get better including:</p>\r\n\r\n<ul>\r\n\t<li style=\"text-align:justify\">Brushes to use</li>\r\n\t<li style=\"text-align:justify\">How to master composition</li>\r\n\t<li style=\"text-align:justify\">How to make your artwork look natural</li>\r\n\t<li style=\"text-align:justify\">How to use leading lines to make your painting more interesting and dynamic</li>\r\n\t<li style=\"text-align:justify\">Much&nbsp;more!!</li>\r\n</ul>\r\n\r\n<p style=\"text-align:justify\">This&nbsp;course&nbsp;is&nbsp;loosely&nbsp;based&nbsp;on landscape painting, a little bit of seascape painting on the way, but the concepts apply to painting universally. No matter what you want to be able to paint, this is a great place to start!</p>",
+      "date_created": "2021-11-04T07:30:15.547Z",
+      "status": "published",
+      "students": [20]
+    }
+  },
+  {
+    "model": "courses.course",
+    "pk": 4,
+    "fields": {
+      "instructor": 9,
+      "category": 4,
+      "language": "en",
+      "title": "Advanced Django (Python)",
+      "slug": "advanced-django-python",
+      "thumbnail_image": "course_thumbnails/advanced-django-python_zSfh6Z8.jpg",
+      "price": 12,
+      "about_the_course": "<p style=\"text-align:justify\">Have&nbsp;you&nbsp;ever&nbsp;wanted&nbsp;to&nbsp;be&nbsp;able&nbsp;to paint <em><strong>anything </strong></em>on your computer on <em><strong>demand</strong></em>? Ever seen images by the greats and wonder how they manage to create incredible images off the top of their heads?</p>\r\n\r\n<p style=\"text-align:justify\">This course is designed to get you playing along and to give you a head start in your landscape painting journey regardless of what software you use.</p>\r\n\r\n<p style=\"text-align:justify\"><strong>No&nbsp;art theory&nbsp;required!</strong></p>\r\n\r\n<p style=\"text-align:justify\">All you need is basic drawing skill and some inspiration. In this course, you&#39;ll overcome many of the fears and questions you&#39;ve had surrounding the art of landscape painting and we&#39;ll tackle a variety of ways you can get better including:</p>\r\n\r\n<ul>\r\n\t<li style=\"text-align:justify\">Brushes to use</li>\r\n\t<li style=\"text-align:justify\">How to master composition</li>\r\n\t<li style=\"text-align:justify\">How to make your artwork look natural</li>\r\n\t<li style=\"text-align:justify\">How to use leading lines to make your painting more interesting and dynamic</li>\r\n\t<li style=\"text-align:justify\">Much&nbsp;more!!</li>\r\n</ul>\r\n\r\n<p style=\"text-align:justify\">This&nbsp;course&nbsp;is&nbsp;loosely&nbsp;based&nbsp;on landscape painting, a little bit of seascape painting on the way, but the concepts apply to painting universally. No matter what you want to be able to paint, this is a great place to start!</p>",
+      "date_created": "2021-11-04T07:37:58.537Z",
+      "status": "published",
+      "students": [1]
+    }
+  },
+  {
+    "model": "courses.course",
+    "pk": 5,
+    "fields": {
+      "instructor": 16,
+      "category": 1,
+      "language": "en",
+      "title": "Paint Beautiful Landscapes with Photoshop",
+      "slug": "paint-beautiful-landscapes-with-photoshop",
+      "thumbnail_image": "course_thumbnails/paint-beautiful-landscapes-with-photoshop_KZo7pH3.jpg",
+      "price": 19,
+      "about_the_course": "<p style=\"text-align:justify\">Have&nbsp;you&nbsp;ever&nbsp;wanted&nbsp;to&nbsp;be&nbsp;able&nbsp;to paint <em><strong>anything </strong></em>on your computer on <em><strong>demand</strong></em>? Ever seen images by the greats and wonder how they manage to create incredible images off the top of their heads?</p>\r\n\r\n<p style=\"text-align:justify\">This course is designed to get you playing along and to give you a head start in your landscape painting journey regardless of what software you use.</p>\r\n\r\n<p><strong>No&nbsp;art theory&nbsp;required!</strong></p>\r\n\r\n<p style=\"text-align:justify\">All you need is basic drawing skill and some inspiration. In this course, you&#39;ll overcome many of the fears and questions you&#39;ve had surrounding the art of landscape painting and we&#39;ll tackle a variety of ways you can get better including:</p>\r\n\r\n<ul>\r\n\t<li>Brushes to use</li>\r\n\t<li>How to master composition</li>\r\n\t<li>How to make your artwork look natural</li>\r\n\t<li>How to use leading lines to make your painting more interesting and dynamic</li>\r\n\t<li>Much&nbsp;more!!</li>\r\n</ul>\r\n\r\n<p style=\"text-align:justify\">This&nbsp;course&nbsp;is&nbsp;loosely&nbsp;based&nbsp;on landscape painting, a little bit of seascape painting on the way, but the concepts apply to painting universally. No matter what you want to be able to paint, this is a great place to start!</p>",
+      "date_created": "2021-11-04T07:45:14.797Z",
+      "status": "published",
+      "students": [1, 2, 19, 22]
+    }
+  },
+  {
+    "model": "courses.course",
+    "pk": 6,
+    "fields": {
+      "instructor": 17,
+      "category": 5,
+      "language": "en",
+      "title": "Find Your Style: Five Exercises to Unlock Your Creative Identity",
+      "slug": "find-your-style-five-exercises-to-unlock-your-creative-identity",
+      "thumbnail_image": "course_thumbnails/find-your-style-five-exercises-to-unlock-your-creative-identity_P3NMlU3.jpg",
+      "price": 16,
+      "about_the_course": "<p>Have&nbsp;you&nbsp;ever&nbsp;wanted&nbsp;to&nbsp;be&nbsp;able&nbsp;to paint <em><strong>anything </strong></em>on your computer on <em><strong>demand</strong></em>? Ever seen images by the greats and wonder how they manage to create incredible images off the top of their heads?</p>\r\n\r\n<p>This course is designed to get you playing along and to give you a head start in your landscape painting journey regardless of what software you use.</p>\r\n\r\n<p><strong>No&nbsp;art theory&nbsp;required!</strong></p>\r\n\r\n<p>All you need is basic drawing skill and some inspiration. In this course, you&#39;ll overcome many of the fears and questions you&#39;ve had surrounding the art of landscape painting and we&#39;ll tackle a variety of ways you can get better including:</p>\r\n\r\n<ul>\r\n\t<li>Brushes to use</li>\r\n\t<li>How to master composition</li>\r\n\t<li>How to make your artwork look natural</li>\r\n\t<li>How to use leading lines to make your painting more interesting and dynamic</li>\r\n\t<li>Much&nbsp;more!!</li>\r\n</ul>\r\n\r\n<p>This&nbsp;course&nbsp;is&nbsp;loosely&nbsp;based&nbsp;on landscape painting, a little bit of seascape painting on the way, but the concepts apply to painting universally. No matter what you want to be able to paint, this is a great place to start!</p>",
+      "date_created": "2021-11-04T07:50:48.647Z",
+      "status": "published",
+      "students": [1, 2]
+    }
+  },
+  {
+    "model": "courses.course",
+    "pk": 7,
+    "fields": {
+      "instructor": 8,
+      "category": 6,
+      "language": "en",
+      "title": "How to Name Brands, Products, and Services",
+      "slug": "how-to-name-brands-products-and-services",
+      "thumbnail_image": "course_thumbnails/how-to-name-brands-products-and-services_aS3l8h1.jpg",
+      "price": 0,
+      "about_the_course": "<p>Have&nbsp;you&nbsp;ever&nbsp;wanted&nbsp;to&nbsp;be&nbsp;able&nbsp;to paint <em><strong>anything </strong></em>on your computer on <em><strong>demand</strong></em>? Ever seen images by the greats and wonder how they manage to create incredible images off the top of their heads?</p>\r\n\r\n<p>This course is designed to get you playing along and to give you a head start in your landscape painting journey regardless of what software you use.</p>\r\n\r\n<p><strong>No&nbsp;art theory&nbsp;required!</strong></p>\r\n\r\n<p>All you need is basic drawing skill and some inspiration. In this course, you&#39;ll overcome many of the fears and questions you&#39;ve had surrounding the art of landscape painting and we&#39;ll tackle a variety of ways you can get better including:</p>\r\n\r\n<ul>\r\n\t<li>Brushes to use</li>\r\n\t<li>How to master composition</li>\r\n\t<li>How to make your artwork look natural</li>\r\n\t<li>How to use leading lines to make your painting more interesting and dynamic</li>\r\n\t<li>Much&nbsp;more!!</li>\r\n</ul>\r\n\r\n<p>This&nbsp;course&nbsp;is&nbsp;loosely&nbsp;based&nbsp;on landscape painting, a little bit of seascape painting on the way, but the concepts apply to painting universally. No matter what you want to be able to paint, this is a great place to start!</p>",
+      "date_created": "2021-11-04T07:53:18.478Z",
+      "status": "published",
+      "students": [1, 2]
+    }
+  },
+  {
+    "model": "courses.course",
+    "pk": 8,
+    "fields": {
+      "instructor": 15,
+      "category": 5,
+      "language": "en",
+      "title": "Be At Peace: Embrace, Nurture and Grow Your Self",
+      "slug": "be-at-peace-embrace-nurture-and-grow-your-self",
+      "thumbnail_image": "course_thumbnails/be-at-peace-embrace-nurture-and-grow-your-self_m6tSbFC.jpg",
+      "price": 24,
+      "about_the_course": "<p style=\"text-align:justify\">Have&nbsp;you&nbsp;ever&nbsp;wanted&nbsp;to&nbsp;be&nbsp;able&nbsp;to paint <em><strong>anything </strong></em>on your computer on <em><strong>demand</strong></em>? Ever seen images by the greats and wonder how they manage to create incredible images off the top of their heads?</p>\r\n\r\n<p style=\"text-align:justify\">This course is designed to get you playing along and to give you a head start in your landscape painting journey regardless of what software you use.</p>\r\n\r\n<p style=\"text-align:justify\"><strong>No&nbsp;art theory&nbsp;required!</strong></p>\r\n\r\n<p style=\"text-align:justify\">All you need is basic drawing skill and some inspiration. In this course, you&#39;ll overcome many of the fears and questions you&#39;ve had surrounding the art of landscape painting and we&#39;ll tackle a variety of ways you can get better including:</p>\r\n\r\n<ul>\r\n\t<li style=\"text-align:justify\">Brushes to use</li>\r\n\t<li style=\"text-align:justify\">How to master composition</li>\r\n\t<li style=\"text-align:justify\">How to make your artwork look natural</li>\r\n\t<li style=\"text-align:justify\">How to use leading lines to make your painting more interesting and dynamic</li>\r\n\t<li style=\"text-align:justify\">Much&nbsp;more!!</li>\r\n</ul>\r\n\r\n<p style=\"text-align:justify\">This&nbsp;course&nbsp;is&nbsp;loosely&nbsp;based&nbsp;on landscape painting, a little bit of seascape painting on the way, but the concepts apply to painting universally. No matter what you want to be able to paint, this is a great place to start!</p>",
+      "date_created": "2021-11-04T07:55:28.477Z",
+      "status": "published",
+      "students": [1, 2]
+    }
+  },
+  {
+    "model": "courses.course",
+    "pk": 9,
+    "fields": {
+      "instructor": 1,
+      "category": 4,
+      "language": "en",
+      "title": "React: The Future of Front-Ends",
+      "slug": "react-the-future-of-front-ends",
+      "thumbnail_image": "course_thumbnails/react-the-future-of-front-ends.jpg",
+      "price": 16,
+      "about_the_course": "<p style=\"text-align:justify\">Have&nbsp;you&nbsp;ever&nbsp;wanted&nbsp;to&nbsp;be&nbsp;able&nbsp;to paint <em><strong>anything </strong></em>on your computer on <em><strong>demand</strong></em>? Ever seen images by the greats and wonder how they manage to create incredible images off the top of their heads?</p>\r\n\r\n<p style=\"text-align:justify\">This course is designed to get you playing along and to give you a head start in your landscape painting journey regardless of what software you use.</p>\r\n\r\n<p style=\"text-align:justify\"><strong>No&nbsp;art theory&nbsp;required!</strong></p>\r\n\r\n<p style=\"text-align:justify\">All you need is basic drawing skill and some inspiration. In this course, you&#39;ll overcome many of the fears and questions you&#39;ve had surrounding the art of landscape painting and we&#39;ll tackle a variety of ways you can get better including:</p>\r\n\r\n<ul>\r\n\t<li style=\"text-align:justify\">Brushes to use</li>\r\n\t<li style=\"text-align:justify\">How to master composition</li>\r\n\t<li style=\"text-align:justify\">How to make your artwork look natural</li>\r\n\t<li style=\"text-align:justify\">How to use leading lines to make your painting more interesting and dynamic</li>\r\n\t<li style=\"text-align:justify\">Much&nbsp;more!!</li>\r\n</ul>\r\n\r\n<p style=\"text-align:justify\">This&nbsp;course&nbsp;is&nbsp;loosely&nbsp;based&nbsp;on landscape painting, a little bit of seascape painting on the way, but the concepts apply to painting universally. No matter what you want to be able to paint, this is a great place to start!</p>",
+      "date_created": "2021-11-04T07:57:23.526Z",
+      "status": "published",
+      "students": [1, 2]
+    }
+  },
+  {
+    "model": "courses.course",
+    "pk": 10,
+    "fields": {
+      "instructor": 18,
+      "category": 7,
+      "language": "en",
+      "title": "Getting Started with the Google Cloud Platform",
+      "slug": "getting-started-with-the-google-cloud-platform",
+      "thumbnail_image": "course_thumbnails/getting-started-with-the-google-cloud-platform_9ifoll1.jpg",
+      "price": 24,
+      "about_the_course": "<p style=\"text-align:justify\">Have&nbsp;you&nbsp;ever&nbsp;wanted&nbsp;to&nbsp;be&nbsp;able&nbsp;to paint <em><strong>anything </strong></em>on your computer on <em><strong>demand</strong></em>? Ever seen images by the greats and wonder how they manage to create incredible images off the top of their heads?</p>\r\n\r\n<p style=\"text-align:justify\">This course is designed to get you playing along and to give you a head start in your landscape painting journey regardless of what software you use.</p>\r\n\r\n<p style=\"text-align:justify\"><strong>No&nbsp;art theory&nbsp;required!</strong></p>\r\n\r\n<p style=\"text-align:justify\">All you need is basic drawing skill and some inspiration. In this course, you&#39;ll overcome many of the fears and questions you&#39;ve had surrounding the art of landscape painting and we&#39;ll tackle a variety of ways you can get better including:</p>\r\n\r\n<ul>\r\n\t<li style=\"text-align:justify\">Brushes to use</li>\r\n\t<li style=\"text-align:justify\">How to master composition</li>\r\n\t<li style=\"text-align:justify\">How to make your artwork look natural</li>\r\n\t<li style=\"text-align:justify\">How to use leading lines to make your painting more interesting and dynamic</li>\r\n\t<li style=\"text-align:justify\">Much&nbsp;more!!</li>\r\n</ul>\r\n\r\n<p style=\"text-align:justify\">This&nbsp;course&nbsp;is&nbsp;loosely&nbsp;based&nbsp;on landscape painting, a little bit of seascape painting on the way, but the concepts apply to painting universally. No matter what you want to be able to paint, this is a great place to start!</p>",
+      "date_created": "2021-11-04T07:59:36.203Z",
+      "status": "published",
+      "students": [1, 2]
+    }
+  },
+  {
+    "model": "courses.course",
+    "pk": 11,
+    "fields": {
+      "instructor": 9,
+      "category": 4,
+      "language": "en",
+      "title": "JavaScript: The Daddy of anything Web Development",
+      "slug": "javascript-the-daddy-of-anything-web-development",
+      "thumbnail_image": "course_thumbnails/javascript-the-daddy-of-anything-web-development.jpg",
+      "price": 18,
+      "about_the_course": "<p style=\"text-align:justify\">Have&nbsp;you&nbsp;ever&nbsp;wanted&nbsp;to&nbsp;be&nbsp;able&nbsp;to paint <em><strong>anything </strong></em>on your computer on <em><strong>demand</strong></em>? Ever seen images by the greats and wonder how they manage to create incredible images off the top of their heads?</p>\r\n\r\n<p style=\"text-align:justify\">This course is designed to get you playing along and to give you a head start in your landscape painting journey regardless of what software you use.</p>\r\n\r\n<p style=\"text-align:justify\"><strong>No&nbsp;art theory&nbsp;required!</strong></p>\r\n\r\n<p style=\"text-align:justify\">All you need is basic drawing skill and some inspiration. In this course, you&#39;ll overcome many of the fears and questions you&#39;ve had surrounding the art of landscape painting and we&#39;ll tackle a variety of ways you can get better including:</p>\r\n\r\n<ul>\r\n\t<li style=\"text-align:justify\">Brushes to use</li>\r\n\t<li style=\"text-align:justify\">How to master composition</li>\r\n\t<li style=\"text-align:justify\">How to make your artwork look natural</li>\r\n\t<li style=\"text-align:justify\">How to use leading lines to make your painting more interesting and dynamic</li>\r\n\t<li style=\"text-align:justify\">Much&nbsp;more!!</li>\r\n</ul>\r\n\r\n<p style=\"text-align:justify\">This&nbsp;course&nbsp;is&nbsp;loosely&nbsp;based&nbsp;on landscape painting, a little bit of seascape painting on the way, but the concepts apply to painting universally. No matter what you want to be able to paint, this is a great place to start!</p>",
+      "date_created": "2021-11-04T08:01:18.877Z",
+      "status": "published",
+      "students": [1]
+    }
+  },
+  {
+    "model": "courses.course",
+    "pk": 12,
+    "fields": {
+      "instructor": 8,
+      "category": 4,
+      "language": "en",
+      "title": "Html, Css, JavaScript: Your Arsenal for Front - End Development",
+      "slug": "html-css-javascript-your-arsenal-for-front-end-development",
+      "thumbnail_image": "course_thumbnails/html-css-javascript-your-arsenal-for-front-end-development_snvG2WV.jpg",
+      "price": 23,
+      "about_the_course": "<p style=\"text-align:justify\">Have&nbsp;you&nbsp;ever&nbsp;wanted&nbsp;to&nbsp;be&nbsp;able&nbsp;to paint <em><strong>anything </strong></em>on your computer on <em><strong>demand</strong></em>? Ever seen images by the greats and wonder how they manage to create incredible images off the top of their heads?</p>\r\n\r\n<p style=\"text-align:justify\">This course is designed to get you playing along and to give you a head start in your landscape painting journey regardless of what software you use.</p>\r\n\r\n<p style=\"text-align:justify\"><strong>No&nbsp;art theory&nbsp;required!</strong></p>\r\n\r\n<p style=\"text-align:justify\">All you need is basic drawing skill and some inspiration. In this course, you&#39;ll overcome many of the fears and questions you&#39;ve had surrounding the art of landscape painting and we&#39;ll tackle a variety of ways you can get better including:</p>\r\n\r\n<ul>\r\n\t<li style=\"text-align:justify\">Brushes to use</li>\r\n\t<li style=\"text-align:justify\">How to master composition</li>\r\n\t<li style=\"text-align:justify\">How to make your artwork look natural</li>\r\n\t<li style=\"text-align:justify\">How to use leading lines to make your painting more interesting and dynamic</li>\r\n\t<li style=\"text-align:justify\">Much&nbsp;more!!</li>\r\n</ul>\r\n\r\n<p style=\"text-align:justify\">This&nbsp;course&nbsp;is&nbsp;loosely&nbsp;based&nbsp;on landscape painting, a little bit of seascape painting on the way, but the concepts apply to painting universally. No matter what you want to be able to paint, this is a great place to start!</p>",
+      "date_created": "2021-11-04T08:02:27.517Z",
+      "status": "draft",
+      "students": [1]
+    }
+  },
+  {
+    "model": "courses.course",
+    "pk": 13,
+    "fields": {
+      "instructor": 13,
+      "category": 1,
+      "language": "en",
+      "title": "Concept Art | Start to Finish",
+      "slug": "concept-art-start-to-finish",
+      "thumbnail_image": "course_thumbnails/concept-art-start-to-finish.jpg",
+      "price": 18,
+      "about_the_course": "<p style=\"text-align:justify\">Have&nbsp;you&nbsp;ever&nbsp;wanted&nbsp;to&nbsp;be&nbsp;able&nbsp;to paint <em><strong>anything </strong></em>on your computer on <em><strong>demand</strong></em>? Ever seen images by the greats and wonder how they manage to create incredible images off the top of their heads?</p>\r\n\r\n<p style=\"text-align:justify\">This course is designed to get you playing along and to give you a head start in your landscape painting journey regardless of what software you use.</p>\r\n\r\n<p style=\"text-align:justify\"><strong>No&nbsp;art theory&nbsp;required!</strong></p>\r\n\r\n<p style=\"text-align:justify\">All you need is basic drawing skill and some inspiration. In this course, you&#39;ll overcome many of the fears and questions you&#39;ve had surrounding the art of landscape painting and we&#39;ll tackle a variety of ways you can get better including:</p>\r\n\r\n<ul>\r\n\t<li style=\"text-align:justify\">Brushes to use</li>\r\n\t<li style=\"text-align:justify\">How to master composition</li>\r\n\t<li style=\"text-align:justify\">How to make your artwork look natural</li>\r\n\t<li style=\"text-align:justify\">How to use leading lines to make your painting more interesting and dynamic</li>\r\n\t<li style=\"text-align:justify\">Much&nbsp;more!!</li>\r\n</ul>\r\n\r\n<p style=\"text-align:justify\">This&nbsp;course&nbsp;is&nbsp;loosely&nbsp;based&nbsp;on landscape painting, a little bit of seascape painting on the way, but the concepts apply to painting universally. No matter what you want to be able to paint, this is a great place to start!</p>",
+      "date_created": "2021-11-04T08:12:27.126Z",
+      "status": "published",
+      "students": [1, 2, 22]
+    }
+  },
+  {
+    "model": "courses.course",
+    "pk": 14,
+    "fields": {
+      "instructor": 5,
+      "category": 1,
+      "language": "da",
+      "title": "Landscape Painting Brushwork",
+      "slug": "landscape-painting-brushwork",
+      "thumbnail_image": "course_thumbnails/landscape-painting-brushwork.jpg",
+      "price": 0,
+      "about_the_course": "<p>Have&nbsp;you&nbsp;ever&nbsp;wanted&nbsp;to&nbsp;be&nbsp;able&nbsp;to play&nbsp;<em><strong>anything </strong></em>on your piano on <em><strong>demand</strong></em>? Ever seen images by the greats and wonder how they manage to create incredible images off the top of their heads?</p>\r\n\r\n<p>This course is designed to get you playing along and to give you a head start in your landscape painting journey regardless of what software you use.</p>\r\n\r\n<p><strong>No&nbsp;music theory&nbsp;required!</strong></p>\r\n\r\n<p>All you need is basic drawing skill and some inspiration. In this course, you&#39;ll overcome many of the fears and questions you&#39;ve had surrounding the art of landscape painting and we&#39;ll tackle a variety of ways you can get better including:</p>\r\n\r\n<ul>\r\n\t<li>Brushes to use</li>\r\n\t<li>How to master composition</li>\r\n\t<li>How to make your artwork look natural</li>\r\n\t<li>How to use leading lines to make your painting more interesting and dynamic</li>\r\n\t<li>Much&nbsp;more!!</li>\r\n</ul>\r\n\r\n<p>This&nbsp;course&nbsp;is&nbsp;loosely&nbsp;based&nbsp;on landscape painting, a little bit of seascape painting on the way, but the concepts apply to painting universally. No matter what you want to be able to paint, this is a great place to start!</p>",
+      "date_created": "2021-11-20T17:59:40.038Z",
+      "status": "draft",
+      "students": [1, 2]
+    }
+  },
+  {
+    "model": "courses.course",
+    "pk": 22,
+    "fields": {
+      "instructor": 5,
+      "category": 1,
+      "language": "ar",
+      "title": "Fantasy Landscapes for Beginners",
+      "slug": "fantasy-landscapes-for-beginners",
+      "thumbnail_image": "course_thumbnails/fantasy-landscapes-for-beginners_gF4MQ1k.jpg",
+      "price": 20,
+      "about_the_course": "<p>Have&nbsp;you&nbsp;ever&nbsp;wanted&nbsp;to&nbsp;be&nbsp;able&nbsp;to paint <em><strong>anything </strong></em>on your computer on <em><strong>demand</strong></em>? Ever seen images by the greats and wonder how they manage to create incredible images off the top of their heads?</p>\r\n\r\n<p>This course is designed to get you playing along and to give you a head start in your landscape painting journey regardless of what software you use.</p>\r\n\r\n<p><strong>No&nbsp;art theory&nbsp;required!</strong></p>\r\n\r\n<p>All you need is basic drawing skill and some inspiration. In this course, you&#39;ll overcome many of the fears and questions you&#39;ve had surrounding the art of landscape painting and we&#39;ll tackle a variety of ways you can get better including:</p>\r\n\r\n<ul>\r\n\t<li>Brushes to use</li>\r\n\t<li>How to master composition</li>\r\n\t<li>How to make your artwork look natural</li>\r\n\t<li>How to use leading lines to make your painting more interesting and dynamic</li>\r\n\t<li>Much&nbsp;more!!</li>\r\n</ul>\r\n\r\n<p>This&nbsp;course&nbsp;is&nbsp;loosely&nbsp;based&nbsp;on landscape painting, a little bit of seascape painting on the way, but the concepts apply to painting universally. No matter what you want to be able to paint, this is a great place to start!</p>",
+      "date_created": "2021-11-24T01:30:43.225Z",
+      "status": "draft",
+      "students": [1, 2]
+    }
+  }
+]

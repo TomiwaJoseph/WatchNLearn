@@ -1,0 +1,142 @@
+[
+  {
+    "model": "users.instructor",
+    "pk": 1,
+    "fields": {
+      "user": 2,
+      "profile_picture": "profile_pics/Jane_Doe.jpg",
+      "expert_in": 2,
+      "about": "<p>Hi,&nbsp;I&nbsp;am <strong>Jane Doe, </strong>Avid student of life!&nbsp;I&nbsp;love&nbsp;learning&nbsp;new&nbsp;things. What&#39;s great about music is that there are always new ways and things. I belive that the best way to learn is to teach. That&#39;s why I started actually. Now I teach to help others while I hone my own skills.</p>"
+    }
+  },
+  {
+    "model": "users.instructor",
+    "pk": 2,
+    "fields": {
+      "user": 5,
+      "profile_picture": "profile_pics/Daniel_Douglas.jpg",
+      "expert_in": 1,
+      "about": "<p style=\"text-align:justify\">I&nbsp;have&nbsp;worked&nbsp;as&nbsp;a&nbsp;freelance&nbsp;Illustrator&nbsp;since&nbsp;1993.&nbsp;I&nbsp;enjoyed&nbsp;doing&nbsp;a&nbsp;variety&nbsp;of&nbsp;work&nbsp;from&nbsp;being&nbsp;a&nbsp;courtroom&nbsp;sketch&nbsp;artist and animation character development artist, to illustrating corporate annual reports and children&#39;s books. I currently have illustrated books that are sold in Barnes and Noble and on Amazon.</p>"
+    }
+  },
+  {
+    "model": "users.instructor",
+    "pk": 3,
+    "fields": {
+      "user": 4,
+      "profile_picture": "profile_pics/Gloria_Wilt.jpg",
+      "expert_in": 3,
+      "about": "<p style=\"text-align:justify\">Hello, I am <strong>Gloria&nbsp;</strong>and I teach Photography&nbsp;and&nbsp;styling&nbsp; classes. I trained as a scientist, worked in Biotech and human vaccines, and after having my first baby, discovered the joys of Instagram and developed a new passion for photography. 7 years later, I now create beautiful imagery for designers and businesses (big and small) and help them advocate for themselves online and on social media.</p>"
+    }
+  },
+  {
+    "model": "users.instructor",
+    "pk": 4,
+    "fields": {
+      "user": 6,
+      "profile_picture": "profile_pics/Julia_Mundy.jpg",
+      "expert_in": 2,
+      "about": "<p style=\"text-align:justify\">Throughout&nbsp;her&nbsp;illustrious,&nbsp;decorated&nbsp;career, Mundy &quot;The Guru as refered to by fans and clients alike has resoundingly earned her reputation as one of the most renowned recording and mixing engineers in music today, having worked with artists such as Jay-Z, Beyonce, Rick Ross, Drake, T.I., Kanye West and Eminem.</p>"
+    }
+  },
+  {
+    "model": "users.instructor",
+    "pk": 5,
+    "fields": {
+      "user": 17,
+      "profile_picture": "profile_pics/Angela_Laurie.jpg",
+      "expert_in": 5,
+      "about": "<p style=\"text-align:justify\">I am an author, Youtuber, and speaker who is passionate about helping students succeed. Most of my work today is done at College Info Geek - a site I created in 2010 in order to share my experience in becoming a more effective student.</p>"
+    }
+  },
+  {
+    "model": "users.instructor",
+    "pk": 6,
+    "fields": {
+      "user": 15,
+      "profile_picture": "profile_pics/Edward_Blasen.jpg",
+      "expert_in": 5,
+      "about": "<p style=\"text-align:justify\">Hi.&nbsp;I&nbsp;am&nbsp;the&nbsp;author&nbsp;of&nbsp;best-seller &quot;What a Time to be Alive&quot;, an empowering call to arms for people everywhere to claim back themselves and focus on the benefits of finding oneself.</p>"
+    }
+  },
+  {
+    "model": "users.instructor",
+    "pk": 7,
+    "fields": {
+      "user": 1,
+      "profile_picture": "profile_pics/Tomiwa_Joseph.jpg",
+      "expert_in": 4,
+      "about": "<p style=\"text-align:justify\">Hi,&nbsp;I&nbsp;am <strong>Tomiwa Joseph, </strong>Avid student of life! I love learning new things. What&#39;s great about code is that there are always new ways and things. I believe that the best way to learn is to teach. That&#39;s why I started actually. Now I teach to help others while I hone my own skills.</p>"
+    }
+  },
+  {
+    "model": "users.instructor",
+    "pk": 8,
+    "fields": {
+      "user": 10,
+      "profile_picture": "profile_pics/Theresa_Rolland.jpg",
+      "expert_in": 4,
+      "about": "<p style=\"text-align:justify\">Hi,&nbsp;I&nbsp;am <strong>Theresa Rolland, </strong>Avid student of life! I love learning new things. What&#39;s great about code is that there are always new ways and things. I believe that the best way to learn is to teach. That&#39;s why I started actually. Now I teach to help others while I hone my own skills.</p>"
+    }
+  },
+  {
+    "model": "users.instructor",
+    "pk": 9,
+    "fields": {
+      "user": 9,
+      "profile_picture": "profile_pics/James_Edmonds.jpg",
+      "expert_in": 4,
+      "about": "<p style=\"text-align:justify\">Hi,&nbsp;I&nbsp;am <strong>James Edmond, </strong>Avid student of life! I love learning new things. What&#39;s great about code is that there are always new ways and things. I believe that the best way to learn is to teach. That&#39;s why I started actually. Now I teach to help others while I hone my own skills.</p>"
+    }
+  },
+  {
+    "model": "users.instructor",
+    "pk": 10,
+    "fields": {
+      "user": 16,
+      "profile_picture": "profile_pics/William_Law.jpg",
+      "expert_in": 1,
+      "about": "<p style=\"text-align:justify\">Hi,&nbsp;I&nbsp;am&nbsp;a&nbsp;podcaster&nbsp;that is always evolving but forever rooted in whimsical narrative and modern graphics. I do digital paintings for a living. Welcome to my class.</p>"
+    }
+  },
+  {
+    "model": "users.instructor",
+    "pk": 11,
+    "fields": {
+      "user": 8,
+      "profile_picture": "profile_pics/Tangela_Taylor.jpg",
+      "expert_in": 6,
+      "about": "<p style=\"text-align:justify\">I&nbsp;am <strong>Tangela Taylor</strong> and I make small business <strong>FUN</strong>. I want you to learn how to have fun in every aspect of your business and my classes are built around fun, actionable projects.</p>\r\n\r\n<p style=\"text-align:justify\">Ready to make your business fun? Join me!</p>"
+    }
+  },
+  {
+    "model": "users.instructor",
+    "pk": 12,
+    "fields": {
+      "user": 11,
+      "profile_picture": "profile_pics/Rodrigo_Schneider.jpg",
+      "expert_in": 7,
+      "about": "<p>Hi.&nbsp;I&nbsp;am&nbsp;<strong>Wells&nbsp;Jorge</strong>.&nbsp;I&nbsp;have&nbsp;been&nbsp;doing&nbsp;IT&nbsp;operations and software development for 30 years. I have worked as a Software Developer, Software Development Manager, Software Architect and as an Operations Manager.</p>"
+    }
+  },
+  {
+    "model": "users.instructor",
+    "pk": 13,
+    "fields": {
+      "user": 18,
+      "profile_picture": "profile_pics/Paul_Andy.jpg",
+      "expert_in": 7,
+      "about": "<p>Hi. I am <strong>Paul Andy</strong>. I have been doing IT operations and software development for 30 years. I have worked as a Software Developer, Software Development Manager, Software Architect and as an Operations Manager.</p>"
+    }
+  },
+  {
+    "model": "users.instructor",
+    "pk": 14,
+    "fields": {
+      "user": 13,
+      "profile_picture": "profile_pics/Courtney_Sweney.jpg",
+      "expert_in": 1,
+      "about": "<p style=\"text-align:justify\">I&nbsp;have&nbsp;worked&nbsp;as&nbsp;a&nbsp;freelance&nbsp;Illustrator&nbsp;since 1993. I enjoyed doing a variety of work from being a courtroom sketch artist and animation character development artist, to illustrating corporate annual reports and children&#39;s books. I currently have illustrated books that are sold in Barnes and Noble and also on Amazon.</p>"
+    }
+  }
+]
